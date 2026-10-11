@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg-primary: #FAF7F1;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-accent: #174A4A;
+  
+  --color-text-primary: #393534;
+  --color-text-secondary: #746A66;
+  --color-text-on-accent: #FAF7F1;
+  
+  --color-accent-primary: #174A4A;
+  --color-focus: #174A4A;
+  
+  --color-botanical-primary: #596957;
+  --color-botanical-secondary: #899783;
+  --color-ornament: #B79A68;
+  
+  --color-border-hairline: #E6E0D7;
+  --color-border-paper: #D8D0C2;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-emerald-blue: #174A4A;
+  --color-warm-ivory: #FAF7F1;
+  --color-white: #FFFFFF;
+  --color-muted-sage: #899783;
+  --color-deep-sage: #596957;
+  --color-champagne: #B79A68;
+  --color-warm-charcoal: #393534;
+  --color-soft-brown: #746A66;
+  
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-dm-sans), "DM Sans", system-ui, sans-serif;
+
+  --shadow-paper: 0 2px 8px rgba(57, 53, 52, 0.04);
+  --shadow-object: 0 6px 20px rgba(57, 53, 52, 0.06);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom selection */
+::selection {
+  background-color: #174A4A;
+  color: #FAF7F1;
+}
+
+/* Accessible focus outlines conforming to 06-DESIGN-SYSTEM.md */
+:focus-visible {
+  outline: 2px solid #174A4A;
+  outline-offset: 3px;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
