@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rizal & Dewi — Digital Invitation
 
-## Getting Started
+Initial Next.js + TypeScript scaffold for the approved luxury editorial direction.
 
-First, run the development server:
-
+## Run locally
+Requires Node.js 20.9+.
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Open http://localhost:3000.
+
+## Original assets
+Original illustration files are included in `public/assets/`:
+- `botanical_full_detail_hybrid.svg`
+- `botanical_ornament.svg`
+- `circular_monogram_ornament.svg`
+- `floating_botanical_leaves_fidelity.svg`
+- `monogram_RD_exact_illustration.svg`
+- `2403.jpg` (optional paper texture)
+- `28370685_white_paper_texture_collection.svg` (optional paper texture)
+
+The page loads lossless WebP copies from `public/assets/optimized/`. The original SVGs contain embedded PNGs; the copies preserve the wrappers' rendered appearance, dimensions, and transparency while reducing download size. Regenerate the copies with `npm run assets:optimize` when updating artwork. Optional paper textures are not loaded.
+
+## Included
+- Opening Editorial Cover and separate Hero composition.
+- CTA-triggered cover transition.
+- Keyboard focus and reduced-motion support.
+- Responsive mobile-first styling.
+
+Additional sections and Supabase RSVP are not implemented yet. Date and location remain pending. Unused legacy sections, envelope assets references, and simulated RSVP behavior have been removed from the scaffold.
+
+## Checks
+```bash
+npm run lint
+npm run typecheck
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ESLint uses the Next.js 15 configuration through `FlatCompat`. Styling uses plain CSS; Tailwind is not required. Opening makes the cover inert and moves keyboard focus to the Hero heading.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Locked palette
+Warm Ivory `#FAF7F1`, Emerald Blue `#174A4A`, Deep Sage `#596957`, Muted Sage `#899783`, Champagne `#B79A68`, Warm Charcoal `#393534`. Display: Cormorant Garamond. Functional: DM Sans.
