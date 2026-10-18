@@ -1,0 +1,258 @@
+{
+  "config": {
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\projek small smallan\\digital-invitation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/final-qa.spec.ts",
+      "--grep",
+      "identity changes|late response"
+    ],
+    "configFile": "D:\\projek small smallan\\digital-invitation\\playwright.config.ts",
+    "rootDir": "D:/projek small smallan/digital-invitation/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/projek small smallan/digital-invitation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/projek small smallan/digital-invitation/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\projek small smallan\\digital-invitation\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\projek small smallan\\digital-invitation\\tests\\browser",
+        "snapshotDir": "D:\\projek small smallan\\digital-invitation\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3004",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "C:/Program Files/Google/Chrome/Application/chrome.exe"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/qa/phase5/identity-before/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "final-qa.spec.ts",
+      "file": "final-qa.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "invitation identity changes reset the previous final RSVP",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8162,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeChecked\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('radio', { name: 'Attending', exact: true })\nExpected: not checked\nReceived: checked\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeChecked\" getByRole('radio', { name: 'Attending', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('radio', { name: 'Attending', exact: true })\u001b[22m\n\u001b[2m    13 × locator resolved to <input required=\"\" type=\"radio\" name=\"attendance\" value=\"attending\"/>\u001b[22m\n\u001b[2m       - unexpected value \"checked\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeChecked\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('radio', { name: 'Attending', exact: true })\nExpected: not checked\nReceived: checked\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeChecked\" getByRole('radio', { name: 'Attending', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('radio', { name: 'Attending', exact: true })\u001b[22m\n\u001b[2m    13 × locator resolved to <input required=\"\" type=\"radio\" name=\"attendance\" value=\"attending\"/>\u001b[22m\n\u001b[2m       - unexpected value \"checked\"\u001b[22m\n\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\final-qa.spec.ts:15:76",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\final-qa.spec.ts",
+                      "column": 76,
+                      "line": 15
+                    },
+                    "snippet": "  13 |   await expect(page.getByRole(\"button\", {name:\"JAWABAN DITERIMA\"})).toBeVisible();\n  14 |   await page.evaluate(() => { location.hash = \"invite=\" + \"B\".repeat(43); });\n> 15 |   await expect(page.getByRole(\"radio\", {name:\"Attending\",exact:true})).not.toBeChecked();\n     |                                                                            ^\n  16 |   await expect(page.getByRole(\"radio\", {name:\"Attending\",exact:true})).toBeEnabled();\n  17 |   await expect(page.getByRole(\"button\", {name:\"KIRIM JAWABAN\"})).toBeDisabled();\n  18 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\final-qa.spec.ts",
+                        "column": 76,
+                        "line": 15
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeChecked\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('radio', { name: 'Attending', exact: true })\nExpected: not checked\nReceived: checked\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeChecked\" getByRole('radio', { name: 'Attending', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('radio', { name: 'Attending', exact: true })\u001b[22m\n\u001b[2m    13 × locator resolved to <input required=\"\" type=\"radio\" name=\"attendance\" value=\"attending\"/>\u001b[22m\n\u001b[2m       - unexpected value \"checked\"\u001b[22m\n\n\n  13 |   await expect(page.getByRole(\"button\", {name:\"JAWABAN DITERIMA\"})).toBeVisible();\n  14 |   await page.evaluate(() => { location.hash = \"invite=\" + \"B\".repeat(43); });\n> 15 |   await expect(page.getByRole(\"radio\", {name:\"Attending\",exact:true})).not.toBeChecked();\n     |                                                                            ^\n  16 |   await expect(page.getByRole(\"radio\", {name:\"Attending\",exact:true})).toBeEnabled();\n  17 |   await expect(page.getByRole(\"button\", {name:\"KIRIM JAWABAN\"})).toBeDisabled();\n  18 | });\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\final-qa.spec.ts:15:76"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:48:10.118Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\final-qa-invitation-identi-11ed8-set-the-previous-final-RSVP\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\final-qa-invitation-identi-11ed8-set-the-previous-final-RSVP\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\final-qa.spec.ts",
+                    "column": 76,
+                    "line": 15
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "aa495ce11f72697787a8-fb3e8877db2bedef3ce9",
+          "file": "final-qa.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "late response from the previous invitation cannot finalize the new one",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9981,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('radio', { name: 'Attending', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('radio', { name: 'Attending', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('radio', { name: 'Attending', exact: true })\u001b[22m\n\u001b[2m    13 × locator resolved to <input required=\"\" type=\"radio\" name=\"attendance\" value=\"attending\"/>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('radio', { name: 'Attending', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('radio', { name: 'Attending', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('radio', { name: 'Attending', exact: true })\u001b[22m\n\u001b[2m    13 × locator resolved to <input required=\"\" type=\"radio\" name=\"attendance\" value=\"attending\"/>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\final-qa.spec.ts:29:72",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\final-qa.spec.ts",
+                      "column": 72,
+                      "line": 29
+                    },
+                    "snippet": "  27 |   await page.evaluate(() => { location.hash = \"invite=\" + \"B\".repeat(43); });\n  28 |   release();\n> 29 |   await expect(page.getByRole(\"radio\", {name:\"Attending\",exact:true})).toBeEnabled();\n     |                                                                        ^\n  30 |   await expect(page.getByRole(\"radio\", {name:\"Attending\",exact:true})).not.toBeChecked();\n  31 |   await expect(page.getByRole(\"button\", {name:\"KIRIM JAWABAN\"})).toBeDisabled();\n  32 |   await expect(page.locator(\".form-status\")).toBeEmpty();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\final-qa.spec.ts",
+                        "column": 72,
+                        "line": 29
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('radio', { name: 'Attending', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('radio', { name: 'Attending', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('radio', { name: 'Attending', exact: true })\u001b[22m\n\u001b[2m    13 × locator resolved to <input required=\"\" type=\"radio\" name=\"attendance\" value=\"attending\"/>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n  27 |   await page.evaluate(() => { location.hash = \"invite=\" + \"B\".repeat(43); });\n  28 |   release();\n> 29 |   await expect(page.getByRole(\"radio\", {name:\"Attending\",exact:true})).toBeEnabled();\n     |                                                                        ^\n  30 |   await expect(page.getByRole(\"radio\", {name:\"Attending\",exact:true})).not.toBeChecked();\n  31 |   await expect(page.getByRole(\"button\", {name:\"KIRIM JAWABAN\"})).toBeDisabled();\n  32 |   await expect(page.locator(\".form-status\")).toBeEmpty();\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\final-qa.spec.ts:29:72"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:48:21.196Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\final-qa-late-response-fro-5706c-cannot-finalize-the-new-one\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\final-qa-late-response-fro-5706c-cannot-finalize-the-new-one\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\final-qa.spec.ts",
+                    "column": 72,
+                    "line": 29
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "aa495ce11f72697787a8-3c72da2878761be422a8",
+          "file": "final-qa.spec.ts",
+          "line": 20,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-18T00:48:08.704Z",
+    "duration": 28924.981,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

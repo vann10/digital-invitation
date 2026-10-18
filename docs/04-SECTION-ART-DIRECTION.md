@@ -1,8 +1,17 @@
 # Section Art Direction — Rizal & Dewi
 
+User correction, 2026-10-16: Hero uses Emerald Blue with Ivory text; The Wedding
+uses an Emerald surround behind its Ivory card/countdown composition. Botanical
+artwork must not be clipped at inner content-container boundaries. The Opening
+keeps Ivory paper with Emerald names/frame. No hamburger/top menu; a text index
+follows Closing. These corrections supersede earlier conflicting color/navigation
+details below. See `VISUAL-CORRECTIONS-QA.md` for validation and remaining gates.
+
 **Status:** LOCKED baseline; content/assets remain pending where noted  
 **Creative direction:** Luxury High-Fashion Wedding Editorial  
 **Principle:** Intricate Details, Restrained Composition
+
+**Approved refinement — 2026-10-15:** the master prompt and supplied storyboard govern appearance. References below to botanical engraving/fine line-art now mean the supplied rich colored botanical illustrations, preserving shading, veins and petal layers; generated outline-only art is deprecated. Subtle paper grain and the master-prompt Opening motion are explicitly approved. Real venue art, photographs, landscape and personal content remain pending; reference panels are never production assets.
 
 ## Global art direction
 

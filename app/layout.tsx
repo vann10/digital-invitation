@@ -20,6 +20,8 @@ const body = DM_Sans({
 export const metadata: Metadata = {
   title: "Rizal & Dewi — The Wedding",
   description: "A digital wedding invitation for Rizal & Dewi.",
+  robots: { index: false, follow: false },
+  referrer: "no-referrer",
 };
 
 export default function RootLayout({
@@ -29,9 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body className={`${display.variable} ${body.variable}`}>
-        {children}
-      </body>
+      <body className={`${display.variable} ${body.variable}`}>{children}</body>
     </html>
   );
 }

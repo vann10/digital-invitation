@@ -1,0 +1,240 @@
+{
+  "responsive": [
+    {
+      "width": 320,
+      "height": 568,
+      "sections": 6,
+      "overflow": false,
+      "clippedText": false,
+      "reducedMotion": true
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "sections": 6,
+      "overflow": false,
+      "clippedText": false,
+      "reducedMotion": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "sections": 6,
+      "overflow": false,
+      "clippedText": false,
+      "reducedMotion": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "sections": 6,
+      "overflow": false,
+      "clippedText": false,
+      "reducedMotion": true
+    }
+  ],
+  "motion": [
+    {
+      "section": "our-story",
+      "kind": "impression",
+      "delay": 100,
+      "duration": 850
+    },
+    {
+      "section": "our-story",
+      "kind": "envelope",
+      "delay": 200,
+      "duration": 1100
+    },
+    {
+      "section": "our-story",
+      "kind": "impression",
+      "delay": 300,
+      "duration": 850
+    },
+    {
+      "section": "our-story",
+      "kind": "impression",
+      "delay": 500,
+      "duration": 850
+    },
+    {
+      "section": "our-story",
+      "kind": "settle",
+      "delay": 0,
+      "duration": 2400
+    },
+    {
+      "section": "our-story",
+      "kind": "letter",
+      "delay": 300,
+      "duration": 1400
+    },
+    {
+      "section": "our-story",
+      "kind": "botanical",
+      "delay": 300,
+      "duration": 1600
+    },
+    {
+      "section": "our-story",
+      "kind": "flutter",
+      "delay": 300,
+      "duration": 2000
+    },
+    {
+      "section": "the-wedding",
+      "kind": "stationery",
+      "delay": 100,
+      "duration": 1200
+    },
+    {
+      "section": "the-wedding",
+      "kind": "stationery",
+      "delay": 200,
+      "duration": 1200
+    },
+    {
+      "section": "the-wedding",
+      "kind": "date",
+      "delay": 150,
+      "duration": 900
+    },
+    {
+      "section": "the-wedding",
+      "kind": "impression",
+      "delay": 250,
+      "duration": 850
+    },
+    {
+      "section": "the-wedding",
+      "kind": "impression",
+      "delay": 500,
+      "duration": 850
+    },
+    {
+      "section": "the-wedding",
+      "kind": "botanical",
+      "delay": 0,
+      "duration": 1600
+    },
+    {
+      "section": "the-wedding",
+      "kind": "impression",
+      "delay": 650,
+      "duration": 850
+    },
+    {
+      "section": "the-wedding",
+      "kind": "settle",
+      "delay": 300,
+      "duration": 2400
+    },
+    {
+      "section": "venue",
+      "kind": "impression",
+      "delay": 0,
+      "duration": 850
+    },
+    {
+      "section": "venue",
+      "kind": "engraving",
+      "delay": 200,
+      "duration": 1800
+    },
+    {
+      "section": "venue",
+      "kind": "impression",
+      "delay": 300,
+      "duration": 850
+    },
+    {
+      "section": "venue",
+      "kind": "botanical",
+      "delay": 100,
+      "duration": 1600
+    },
+    {
+      "section": "rsvp",
+      "kind": "impression",
+      "delay": 300,
+      "duration": 850
+    },
+    {
+      "section": "gallery",
+      "kind": "impression",
+      "delay": 0,
+      "duration": 850
+    },
+    {
+      "section": "gallery",
+      "kind": "flutter",
+      "delay": 100,
+      "duration": 2000
+    },
+    {
+      "section": "gallery",
+      "kind": "impression",
+      "delay": 200,
+      "duration": 850
+    },
+    {
+      "section": "gallery",
+      "kind": "botanical",
+      "delay": 300,
+      "duration": 1600
+    },
+    {
+      "section": "rsvp",
+      "kind": "settle",
+      "delay": 300,
+      "duration": 2400
+    },
+    {
+      "section": "rsvp",
+      "kind": "reply",
+      "delay": 0,
+      "duration": 1000
+    },
+    {
+      "section": "closing",
+      "kind": "impression",
+      "delay": 200,
+      "duration": 850
+    },
+    {
+      "section": "closing",
+      "kind": "rule",
+      "delay": 450,
+      "duration": 1000
+    },
+    {
+      "section": "closing",
+      "kind": "impression",
+      "delay": 300,
+      "duration": 850
+    },
+    {
+      "section": "closing",
+      "kind": "botanical",
+      "delay": 0,
+      "duration": 1600
+    },
+    {
+      "section": "closing",
+      "kind": "settle",
+      "delay": 100,
+      "duration": 2400
+    },
+    {
+      "section": "closing",
+      "kind": "signature",
+      "delay": 300,
+      "duration": 1400
+    }
+  ],
+  "keyboard": true,
+  "opening": true,
+  "reducedMotionChange": true,
+  "sectionOrder": true
+}

@@ -1,0 +1,114 @@
+{
+  "status": "PROPOSED — USER VISUAL REVIEW PENDING",
+  "generator": "Built-in image_gen; exact model identity not exposed. User authorized substitution for requested GPT Image 2.5.",
+  "assets": [
+    {
+      "id": "rd-connecting-branch-v1",
+      "role": "Opening / Hero / section edges",
+      "master": "masters/rd-connecting-branch-v1.png",
+      "width": 1024,
+      "height": 1536,
+      "aspectRatio": "1024:1536",
+      "bytes": 2360584,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "pivot": [
+        0.4,
+        0.92
+      ],
+      "variants": [
+        {
+          "file": "web/rd-connecting-branch-v1-320.webp",
+          "width": 213,
+          "height": 320,
+          "bytes": 32514
+        },
+        {
+          "file": "web/rd-connecting-branch-v1-640.webp",
+          "width": 427,
+          "height": 640,
+          "bytes": 97722
+        },
+        {
+          "file": "web/rd-connecting-branch-v1-960.webp",
+          "width": 640,
+          "height": 960,
+          "bytes": 193208
+        }
+      ]
+    },
+    {
+      "id": "rd-bud-sprig-v1",
+      "role": "Letter / RSVP / narrow margins",
+      "master": "masters/rd-bud-sprig-v1.png",
+      "width": 1024,
+      "height": 1536,
+      "aspectRatio": "1024:1536",
+      "bytes": 1921374,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "pivot": [
+        0.55,
+        0.93
+      ],
+      "variants": [
+        {
+          "file": "web/rd-bud-sprig-v1-320.webp",
+          "width": 213,
+          "height": 320,
+          "bytes": 20194
+        },
+        {
+          "file": "web/rd-bud-sprig-v1-640.webp",
+          "width": 427,
+          "height": 640,
+          "bytes": 57684
+        },
+        {
+          "file": "web/rd-bud-sprig-v1-960.webp",
+          "width": 640,
+          "height": 960,
+          "bytes": 114042
+        }
+      ]
+    },
+    {
+      "id": "rd-peony-accent-v1",
+      "role": "Foreground focal layer / cover",
+      "master": "masters/rd-peony-accent-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "aspectRatio": "1254:1254",
+      "bytes": 2307814,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "alphaMax": 255,
+      "pivot": [
+        0.5,
+        0.6
+      ],
+      "variants": [
+        {
+          "file": "web/rd-peony-accent-v1-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 34256
+        },
+        {
+          "file": "web/rd-peony-accent-v1-640.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 122906
+        },
+        {
+          "file": "web/rd-peony-accent-v1-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 265550
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,15 @@
 # Opening Motion Specification --- Rizal & Dewi
 
+## Superseding user approval — 2026-10-15
+
+The user explicitly approved the master implementation plan: texture and motion follow `MASTER-IMPLEMENTATION-PROMPT-RIZAL-DEWI.md`, and all code-generated botanical line-art is replaced by supplied illustrations from `public/assets`.
+
+**Active specification:** rich colored artwork enters from different directions over 1.4–2.0s; supplied monogram follows via fade and subtle scale; gentle 6–12s idle motion is pauseable, pauses in hidden tabs and stops on exit. CTA remains available immediately. Activation moves botanical groups outward while fading them, shrinks/fades the monogram, and crossfades to the separate Hero in 1.2–1.6s. Reduced motion uses static full artwork and a short state change. Subtle paper grain is approved.
+
+**DEPRECATED historical specification below:** mandatory path drawing, line-art-only appearance, avoidance of idle animation and the earlier texture restriction no longer govern this implementation. Content, keyboard/focus, reduced-motion, responsiveness and security requirements remain applicable. See `03-OPENING-EXPERIENCE.md` for the reconciled authority.
+
+---
+
 **Status:** Visual direction LOCKED; implementation and browser QA NOT
 TESTED\
 **Applies to:** Opening / Editorial Cover only\

@@ -14,7 +14,7 @@ The website is not a generic wedding template, SaaS dashboard, scrapbook, or ove
 ## 2. Locked creative direction
 
 - Luxury High-Fashion Wedding Editorial.
-- Intricate botanical engraving / fine line-art paired with restrained composition.
+- Rich, colored botanical illustration with engraved detail and painterly shading, paired with restrained composition. The user approved the master prompt on 2026-10-15; existing `public/assets` artwork replaces code-generated botanical line-art.
 - Clean digital stationery with subtle material cues.
 - Generous negative space and controlled asymmetry.
 - Editorial motion, not UI motion.

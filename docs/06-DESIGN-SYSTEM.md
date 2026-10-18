@@ -100,8 +100,8 @@ Mobile-first. Desktop is an editorial re-composition, not a scaled-up mobile lay
 
 - Warm Ivory is the default canvas.
 - White distinguishes stationery surfaces where useful.
-- No visible texture as a general page treatment.
-- Opening may use imperceptible material cues; texture must not become a visible effect.
+- Subtle paper grain across the Warm Ivory canvas is approved by the user on 2026-10-15, following the master prompt. Use the supplied paper texture with restrained opacity; preserve readability and natural photo color.
+- Artwork retains its own engraved/painterly detail. Background texture cannot substitute for illustration detail.
 
 ### Border tokens
 
@@ -134,7 +134,7 @@ Shadows are optional; prefer composition and fine borders. Avoid heavy shadows, 
 
 ### Botanical art
 
-Complex botanical engraving / fine line-art: fine strokes, visible veins, organic curves, intertwined stems, intricate flowers, refined negative space.
+Rich colored botanical illustration from `public/assets`: engraved marks, visible veins, organic curves, intertwined stems, layered petals and tonal shading. Preserve original proportions, color and transparency. The user approved replacement of all code-generated botanical line-art on 2026-10-15.
 
 - Deep Sage and Emerald Blue: primary structure.
 - Muted Sage: secondary layers.
@@ -164,6 +164,14 @@ Success only after backend confirmation. Keep acknowledgement quiet. If submissi
 
 ## 7. Motion system
 
+User correction, 2026-10-16: motion must remain present after the cover opens.
+Observe individual text/artwork/photo layers when they enter the viewport, rather
+than starting every layer when a tall section first intersects. Text reveals use
+950ms; illustration/photo reveals use 1200ms with at most 300ms local stagger.
+Visible botanical images use a gentle 10s drift after opening; offscreen/hidden-tab
+motion pauses. A footer pause/resume control and dynamic reduced-motion handling
+apply to the opened experience. Content remains available without animations.
+
 Core principle: **Editorial motion, not UI motion.**
 
 Motion may suggest paper unfolding, cards entering a composition, photographs being placed, typography revealing, botanical line-art drawing, and subtle parallax.
@@ -175,6 +183,8 @@ Historical timing guidance:
 - Opening Cover → Hero transition target: approximately 1.2–1.6s.
 
 Opening-specific timing and sequence are governed by `03-OPENING-EXPERIENCE.md`. The Opening uses CTA-triggered Editorial Cover motion. Treat all timings as baselines to validate, not guaranteed performance.
+
+Approved master-prompt refinement: initial artwork entrance 1.4–2.0s, followed by subtle 6–12s idle cycles with pause/resume. Stop idle motion on exit, pause in hidden tabs, and remove it for reduced motion. Animate complete supplied artwork through opacity/transforms; do not simplify it into paths. See the approved refinement in document 03.
 
 Avoid bounce, elastic easing, spinning, flashy particles, excessive zoom, heavy 3D, and scroll hijacking. Honor reduced-motion settings; preserve content and functionality.
 
@@ -200,3 +210,8 @@ Catatan audit
 Ada dua hal yang perlu diperhatikan sebelum dokumen ini dinyatakan final.
 1. Durasi animasi: Design System mencantumkan beberapa rentang waktu umum, sedangkan Opening memiliki target khusus sekitar 1,2–1,6 detik. Ini bukan konflik karena file 06 secara eksplisit menyerahkan aturan Opening kepada 03-OPENING-EXPERIENCE.md.
 2. Validasi visual belum dilakukan: ukuran font, kontras warna pada komponen aktual, layout responsif, dan performa animasi masih perlu diuji saat implementasi.
+
+
+## Current user override — nature editorial revision
+
+The latest explicit user request supersedes earlier ambient-loop, pause-control and navigation requirements: remove hamburger/bottom navigation and animation pause controls; use finite varied editorial motion with reduced-motion support. Opening handoff remains approximately 1.4 seconds. Music begins on Opening activation with a floating play/stop control. See [current QA](NATURE-EDITORIAL-QA.md) for evidence and remaining release blockers.

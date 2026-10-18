@@ -4,6 +4,19 @@
 **Core principle:** Ceremonial interaction, invisible interface  
 **Experience:** Editorial Cover → CTA activation → sequential editorial reveal → separate Hero composition
 
+## Approved master-prompt refinement — 2026-10-15
+
+The user explicitly approved the master implementation plan, its paper texture and motion, and replacement of all code-generated botanical line-art with supplied `public/assets` illustrations. Where older wording below conflicts, this approved refinement governs:
+
+- Preserve rich colored, dimensional botanical artwork and the original RD monogram. No replacement line drawing is required.
+- Initial botanical entrance: different directions with stagger, 1.4–2.0 seconds. Monogram follows through opacity and slight scale-in. CTA is available throughout.
+- Subtle living motion: 6–12 second cycles, with a pause/resume control; paused when the page is hidden and stopped on cover exit.
+- CTA transition: settle idle motion, move artwork outward and fade, slightly shrink/fade the monogram, crossfade to the separate Hero in 1.2–1.6 seconds.
+- Reduced motion: full static artwork, no idle motion, at most a short state transition.
+- Subtle warm ivory paper texture is approved. No heavy grain, distortion, recoloring, or damaged transparency.
+
+Earlier path-drawing-only direction is **DEPRECATED**. Section order, interaction semantics, accessibility, content restrictions and performance requirements remain binding. New QA evidence is recorded separately in `qa/master-implementation/`.
+
 ## 1. Concept
 
 The Opening is a premium editorial cover that ceremonially introduces the digital wedding invitation. It is a distinct composition, separate from the Hero.
@@ -126,3 +139,8 @@ Catatan audit
 Aturan implementasi yang harus dipertahankan:
 1. Tidak semua lapisan animasi wajib digunakan sekaligus. Editorial Cover, CTA, dan Hero terpisah adalah konsep aktif.
 2. Statusnya masih spesifikasi desain, bukan bukti implementasi. Durasi, kelancaran animasi, tampilan mobile, keyboard, dan reduced motion harus diuji di browser sebelum dinyatakan lolos.
+
+
+## Current user override — nature editorial revision
+
+The latest explicit user request supersedes earlier ambient-loop, pause-control and navigation requirements: remove hamburger/bottom navigation and animation pause controls; use finite varied editorial motion with reduced-motion support. Opening handoff remains approximately 1.4 seconds. Music begins on Opening activation with a floating play/stop control. See [current QA](NATURE-EDITORIAL-QA.md) for evidence and remaining release blockers.

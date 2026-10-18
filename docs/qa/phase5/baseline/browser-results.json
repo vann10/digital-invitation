@@ -1,0 +1,1143 @@
+{
+  "config": {
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\projek small smallan\\digital-invitation\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "D:\\projek small smallan\\digital-invitation\\playwright.config.ts",
+    "rootDir": "D:/projek small smallan/digital-invitation/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/projek small smallan/digital-invitation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/projek small smallan/digital-invitation/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\projek small smallan\\digital-invitation\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\projek small smallan\\digital-invitation\\tests\\browser",
+        "snapshotDir": "D:\\projek small smallan\\digital-invitation\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3004",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "C:/Program Files/Google/Chrome/Application/chrome.exe"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/qa/phase5/baseline/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "invitation.spec.ts",
+      "file": "invitation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "illustrated entrance, monogram reveal, finite motion and outward handoff",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9458,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:98:5",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 5,
+                      "line": 98
+                    },
+                    "snippet": "   96 |           .length,\n   97 |     ),\n>  98 |   ).toBe(0);\n      |     ^\n   99 |   await expect(page.getByRole(\"button\", { name: /jeda animasi/i })).toHaveCount(\n  100 |     0,\n  101 |   );"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 5,
+                        "line": 98
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n   96 |           .length,\n   97 |     ),\n>  98 |   ).toBe(0);\n      |     ^\n   99 |   await expect(page.getByRole(\"button\", { name: /jeda animasi/i })).toHaveCount(\n  100 |     0,\n  101 |   );\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:98:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:40:24.531Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-illustrated-ent-d99d3--motion-and-outward-handoff\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-illustrated-ent-d99d3--motion-and-outward-handoff\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 5,
+                    "line": 98
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-6e6d9f36c852c3c0dd2e",
+          "file": "invitation.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "composition 320x568",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10214,
+                  "error": {
+                    "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2478.46875\u001b[39m\nReceived:   \u001b[31m2576.078369140625\u001b[39m",
+                    "stack": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2478.46875\u001b[39m\nReceived:   \u001b[31m2576.078369140625\u001b[39m\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 7,
+                      "line": 223
+                    },
+                    "snippet": "  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 7,
+                        "line": 223
+                      },
+                      "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2478.46875\u001b[39m\nReceived:   \u001b[31m2576.078369140625\u001b[39m\n\n  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 320: 1415ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:40:39.016Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-320x568\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-320x568\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 7,
+                    "line": 223
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-54923e9b1174b2bfd090",
+          "file": "invitation.spec.ts",
+          "line": 147,
+          "column": 7
+        },
+        {
+          "title": "composition 390x844",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13639,
+                  "error": {
+                    "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2444.078125\u001b[39m\nReceived:   \u001b[31m2541.687744140625\u001b[39m",
+                    "stack": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2444.078125\u001b[39m\nReceived:   \u001b[31m2541.687744140625\u001b[39m\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 7,
+                      "line": 223
+                    },
+                    "snippet": "  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 7,
+                        "line": 223
+                      },
+                      "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2444.078125\u001b[39m\nReceived:   \u001b[31m2541.687744140625\u001b[39m\n\n  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 390: 1410ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:40:56.089Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-390x844\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-390x844\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 7,
+                    "line": 223
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-05cc98cc705c2d78c5c5",
+          "file": "invitation.spec.ts",
+          "line": 147,
+          "column": 7
+        },
+        {
+          "title": "composition 768x1024",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 25302,
+                  "error": {
+                    "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2598.6875\u001b[39m\nReceived:   \u001b[31m2696.297119140625\u001b[39m",
+                    "stack": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2598.6875\u001b[39m\nReceived:   \u001b[31m2696.297119140625\u001b[39m\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 7,
+                      "line": 223
+                    },
+                    "snippet": "  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 7,
+                        "line": 223
+                      },
+                      "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2598.6875\u001b[39m\nReceived:   \u001b[31m2696.297119140625\u001b[39m\n\n  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 768: 1518ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:41:22.896Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-768x1024\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-768x1024\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 7,
+                    "line": 223
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-e64651dc0072e2a5d8e1",
+          "file": "invitation.spec.ts",
+          "line": 147,
+          "column": 7
+        },
+        {
+          "title": "composition 1024x768",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15553,
+                  "error": {
+                    "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m1819.015625\u001b[39m\nReceived:   \u001b[31m1865.1146240234375\u001b[39m",
+                    "stack": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m1819.015625\u001b[39m\nReceived:   \u001b[31m1865.1146240234375\u001b[39m\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 7,
+                      "line": 223
+                    },
+                    "snippet": "  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 7,
+                        "line": 223
+                      },
+                      "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m1819.015625\u001b[39m\nReceived:   \u001b[31m1865.1146240234375\u001b[39m\n\n  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 1024: 1415ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:41:59.096Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-1024x768\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-1024x768\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 7,
+                    "line": 223
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-c89fed7f044b0d62932b",
+          "file": "invitation.spec.ts",
+          "line": 147,
+          "column": 7
+        },
+        {
+          "title": "composition 1440x900",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20908,
+                  "error": {
+                    "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m1934.84375\u001b[39m\nReceived:   \u001b[31m1980.9427490234375\u001b[39m",
+                    "stack": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m1934.84375\u001b[39m\nReceived:   \u001b[31m1980.9427490234375\u001b[39m\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 7,
+                      "line": 223
+                    },
+                    "snippet": "  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 7,
+                        "line": 223
+                      },
+                      "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m1934.84375\u001b[39m\nReceived:   \u001b[31m1980.9427490234375\u001b[39m\n\n  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 1440: 1430ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:42:24.614Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-1440x900\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-1440x900\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 7,
+                    "line": 223
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-402add630e44598a160b",
+          "file": "invitation.spec.ts",
+          "line": 147,
+          "column": 7
+        },
+        {
+          "title": "composition 667x375",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 26531,
+                  "error": {
+                    "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2388.328125\u001b[39m\nReceived:   \u001b[31m2485.937744140625\u001b[39m",
+                    "stack": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2388.328125\u001b[39m\nReceived:   \u001b[31m2485.937744140625\u001b[39m\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 7,
+                      "line": 223
+                    },
+                    "snippet": "  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 7,
+                        "line": 223
+                      },
+                      "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2388.328125\u001b[39m\nReceived:   \u001b[31m2485.937744140625\u001b[39m\n\n  221 |       leafBox!.y + leafBox!.height,\n  222 |       \"countdown artwork must clear its label\",\n> 223 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  224 |     expect(\n  225 |       await page\n  226 |         .locator(\"main section[id]\")\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:223:7"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 667: 1502ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:42:55.120Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-667x375\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-667x375\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 7,
+                    "line": 223
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-6b193598cf7506935481",
+          "file": "invitation.spec.ts",
+          "line": 147,
+          "column": 7
+        },
+        {
+          "title": "no navigation or pause UI; opening preserves invitation identity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:43:27.840Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-1553b1dc6936235e1c84",
+          "file": "invitation.spec.ts",
+          "line": 285,
+          "column": 5
+        },
+        {
+          "title": "section choreography varies by material and reduced motion cancels active reveals",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8721,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:315:6",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 6,
+                      "line": 315
+                    },
+                    "snippet": "  313 |   await expect\n  314 |     .poll(() => heroTitle.evaluate((el) => el.getAnimations().length))\n> 315 |     .toBeGreaterThan(0);\n      |      ^\n  316 |   await page.locator(\".phase-opened\").waitFor();\n  317 |   expect(\n  318 |     await heroTitle.evaluate((el) => Number(getComputedStyle(el).opacity)),"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 6,
+                        "line": 315
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  313 |   await expect\n  314 |     .poll(() => heroTitle.evaluate((el) => el.getAnimations().length))\n> 315 |     .toBeGreaterThan(0);\n      |      ^\n  316 |   await page.locator(\".phase-opened\").waitFor();\n  317 |   expect(\n  318 |     await heroTitle.evaluate((el) => Number(getComputedStyle(el).opacity)),\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:315:6"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:43:31.716Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-section-choreog-912d4-tion-cancels-active-reveals\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-section-choreog-912d4-tion-cancels-active-reveals\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 6,
+                    "line": 315
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-49d4e6a4c498276fca58",
+          "file": "invitation.spec.ts",
+          "line": 306,
+          "column": 5
+        },
+        {
+          "title": "changing reduced motion preference completes cover artwork immediately",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3435,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:43:42.805Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-88641b3323b541b1d9af",
+          "file": "invitation.spec.ts",
+          "line": 337,
+          "column": 5
+        },
+        {
+          "title": "keyboard Enter and Space, early activation, duplicate activation and stopped animations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8295,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:43:47.257Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-ac55266f7ed28236b452",
+          "file": "invitation.spec.ts",
+          "line": 359,
+          "column": 5
+        },
+        {
+          "title": "touch activation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3959,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:43:55.580Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-bfba1d0a295c40a9458a",
+          "file": "invitation.spec.ts",
+          "line": 387,
+          "column": 5
+        },
+        {
+          "title": "reduced motion and accessibility scan",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5034,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:43:59.566Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-022ff9124cbaf79621d3",
+          "file": "invitation.spec.ts",
+          "line": 400,
+          "column": 5
+        },
+        {
+          "title": "no JavaScript native cover form opens invitation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2430,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:44:04.625Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-e5d975aa5329a05e9de6",
+          "file": "invitation.spec.ts",
+          "line": 434,
+          "column": 5
+        },
+        {
+          "title": "RSVP retains selection on error and only confirms server success (mock transport)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1961,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:44:07.078Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-d078213230cf5b61f83b",
+          "file": "invitation.spec.ts",
+          "line": 446,
+          "column": 5
+        },
+        {
+          "title": "already-submitted response shows authoritative final choice (mock transport)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1352,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:44:09.072Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-a7e057566e17888aed83",
+          "file": "invitation.spec.ts",
+          "line": 479,
+          "column": 5
+        },
+        {
+          "title": "real API rejects anonymous export, foreign origins, malformed input and disabled backend",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:44:10.446Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-633a8fd937087b8828d2",
+          "file": "invitation.spec.ts",
+          "line": 496,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "music.spec.ts",
+      "file": "music.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "failed audio download can be retried without reopening the invitation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3276,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:44:10.738Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d97237201e8c41ddec1a-fc1cce120d9906320735",
+          "file": "music.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "music is gesture-started, plays real audio, stops at zero and can restart by keyboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2654,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:44:14.118Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d97237201e8c41ddec1a-129a8c6ce6442e3fd1be",
+          "file": "music.spec.ts",
+          "line": 16,
+          "column": 5
+        },
+        {
+          "title": "blocked playback leaves invitation usable and offers a real retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3933,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:44:16.795Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d97237201e8c41ddec1a-996dffea93ee317a00f9",
+          "file": "music.spec.ts",
+          "line": 60,
+          "column": 5
+        },
+        {
+          "title": "direct opened link stays silent until the play control is activated",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2085,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T00:44:20.754Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d97237201e8c41ddec1a-589c7b0090f189f435fe",
+          "file": "music.spec.ts",
+          "line": 91,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-18T00:40:23.199Z",
+    "duration": 263014.38,
+    "expected": 13,
+    "skipped": 0,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}

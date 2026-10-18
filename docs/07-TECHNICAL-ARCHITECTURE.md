@@ -1,5 +1,9 @@
 # Technical Architecture — Rizal & Dewi Digital Invitation
 
+## Implementation note — 2026-10-15
+
+An opt-in implementation proposal now exists in `app/api/`, `lib/`, `app/operator/` and `supabase/migrations/001_proposed_rsvp.sql`. See [IMPLEMENTATION-DECISIONS.md](IMPLEMENTATION-DECISIONS.md) for explicit proposed schema/token/auth/export choices. These are **PENDING acceptance**, not additional LOCKED decisions. Local PostgreSQL finality/concurrency/permissions and anonymous local API denial were verified; hosted Supabase integration remains **BLOCKED**. See [QA-REPORT.md](QA-REPORT.md). The technical decision list below remains authoritative for approval boundaries.
+
 **Status:** Product decisions locked; implementation details pending  
 **Purpose:** Align technical planning with confirmed project decisions without implying the backend has been implemented.
 

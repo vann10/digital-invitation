@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-18T00:40:05.505Z",
+  "engine": "isolated PostgreSQL 17",
+  "result": "PASS",
+  "checks": [
+    "migration applied",
+    "4 concurrent submissions: exactly one accepted",
+    "authoritative response retained on duplicates",
+    "expired/revoked/unknown tokens rejected",
+    "invalid option rejected",
+    "anon/authenticated tables denied",
+    "anon RPC denied",
+    "update/delete trigger denied even as owner",
+    "duplicate primary key denied"
+  ],
+  "limitation": "Local PostgreSQL only; live Supabase Auth/PostgREST/RLS environment NOT TESTED"
+}

@@ -1,0 +1,47 @@
+{
+  "status": "PROPOSED assembly only — not a page layout",
+  "canvas": {
+    "width": 720,
+    "height": 900
+  },
+  "layers": [
+    {
+      "asset": "rd-connecting-branch-v1",
+      "file": "web/rd-connecting-branch-v1-960.webp",
+      "x": 80,
+      "y": 60,
+      "width": 460,
+      "z": 0,
+      "transformOrigin": "40% 92%"
+    },
+    {
+      "asset": "rd-bud-sprig-v1",
+      "file": "web/rd-bud-sprig-v1-640.webp",
+      "x": 290,
+      "y": 310,
+      "width": 260,
+      "z": 1,
+      "transformOrigin": "55% 93%"
+    },
+    {
+      "asset": "rd-peony-accent-v1",
+      "file": "web/rd-peony-accent-v1-640.webp",
+      "x": 115,
+      "y": 450,
+      "width": 320,
+      "z": 2,
+      "transformOrigin": "50% 60%"
+    }
+  ],
+  "motion": {
+    "type": "finite",
+    "branchDegrees": 2,
+    "sprigDegrees": 3,
+    "flowerScale": [
+      0.98,
+      1
+    ],
+    "reducedMotion": "static",
+    "note": "Separate independent raster motifs, not articulated petal/leaf rigs. Preview only."
+  }
+}

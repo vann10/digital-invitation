@@ -1,5 +1,21 @@
 # QA & Acceptance Criteria — Rizal & Dewi Digital Invitation
 
+## Approved master-prompt checks — 2026-10-15
+
+The user approved rich supplied botanical illustrations, subtle paper texture, entrance/idle/exit motion, and removal of generated line-art. Current execution evidence belongs in [MASTER-IMPLEMENTATION-QA.md](MASTER-IMPLEMENTATION-QA.md) and `qa/master-implementation/`. Earlier evidence does not establish a pass for the revised implementation.
+
+- [ ] All displayed botanicals use supplied artwork, preserving shading, detail, color and transparency.
+- [ ] Paper grain is subtle and distinct from the artwork's own texture; it does not tint photographs.
+- [ ] Botanical groups enter from different directions in approximately 1.4–2.0s; monogram follows with fade/scale.
+- [ ] Idle cycles are subtle (6–12s), pauseable, paused in hidden tabs, disabled for reduced motion and stopped on exit.
+- [ ] CTA remains available before decorative motion finishes; duplicate activation is guarded.
+- [ ] Botanical exit travels outward and fades, monogram shrinks/fades, and the separate Hero is revealed within 1.2–1.6s.
+- [ ] Actual mobile/desktop screenshots are compared against all section references; missing content/assets remain explicit.
+
+## Implementation evidence — 2026-10-15
+
+The original checklist below is the canonical release gate; unchecked items must not be interpreted as passed merely because code exists. Scoped execution results, fixes, viewports, screenshots, command outputs and remaining limits are now recorded in [QA-REPORT.md](QA-REPORT.md) and `qa/`. Release remains **BLOCKED** by real content/assets, acceptance of backend proposals and live Supabase configuration. The historical evidence table below describes the baseline before this implementation; use the dated report for current verified results.
+
 **Status:** Criteria defined; execution NOT TESTED unless a result is recorded  
 **Purpose:** Define what must be checked before launch. This checklist is not evidence that checks have passed.
 
@@ -98,3 +114,8 @@ Sebagian besar kriteria sudah bisa digunakan sebagai checklist. Namun, beberapa 
 2. Data produksi merupakan bagian dari kesiapan rilis.
 Dokumen ini benar karena tidak hanya memeriksa kode dan tampilan, tetapi juga mensyaratkan tanggal pernikahan, venue, cerita, foto, monogram, dan konten lainnya sudah disetujui sebelum undangan dianggap siap dirilis.
 Satu catatan tambahan: tabel Evidence Log masih berupa status awal. Nanti, status NOT TESTED hanya boleh diubah setelah hasil pengujian benar-benar tersedia.
+
+
+## Current user override — nature editorial revision
+
+The latest explicit user request supersedes earlier ambient-loop, pause-control and navigation requirements: remove hamburger/bottom navigation and animation pause controls; use finite varied editorial motion with reduced-motion support. Opening handoff remains approximately 1.4 seconds. Music begins on Opening activation with a floating play/stop control. See [current QA](NATURE-EDITORIAL-QA.md) for evidence and remaining release blockers.

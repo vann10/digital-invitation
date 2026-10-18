@@ -1,0 +1,28 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "bounds": {
+      "x": 0,
+      "y": 152.625,
+      "width": 390,
+      "height": 562.34375
+    },
+    "overflow": false,
+    "images": true,
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "bounds": {
+      "x": 80,
+      "y": 143.203125,
+      "width": 1280,
+      "height": 638.109375
+    },
+    "overflow": false,
+    "images": true,
+    "violations": []
+  }
+]

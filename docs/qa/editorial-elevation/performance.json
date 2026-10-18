@@ -1,0 +1,60 @@
+[
+  {
+    "width": 390,
+    "handoff": {
+      "duration": 1414.3000000044703,
+      "names": [
+        {
+          "opacity": "1",
+          "clipPath": "inset(0px 0.668121% 0px 0px)"
+        },
+        {
+          "opacity": "0.965446",
+          "clipPath": "none"
+        },
+        {
+          "opacity": "1",
+          "clipPath": "inset(0px 0.668121% 0px 0px)"
+        }
+      ],
+      "scrollY": 0
+    },
+    "metrics": {
+      "cls": 0.0010817096217630516,
+      "lcp": 8756,
+      "overflow": false,
+      "imageBytes": 1034218,
+      "imageRequests": 14
+    },
+    "environment": "Local Chromium, unthrottled; not a field Core Web Vitals measurement"
+  },
+  {
+    "width": 1440,
+    "handoff": {
+      "duration": 1433,
+      "names": [
+        {
+          "opacity": "1",
+          "clipPath": "inset(0px 0.439262% 0px 0px)"
+        },
+        {
+          "opacity": "0.970752",
+          "clipPath": "none"
+        },
+        {
+          "opacity": "1",
+          "clipPath": "inset(0px 0.439262% 0px 0px)"
+        }
+      ],
+      "scrollY": 0
+    },
+    "metrics": {
+      "cls": 0.00016264059017061044,
+      "lcp": 7440,
+      "overflow": false,
+      "imageBytes": 1305392,
+      "imageRequests": 14
+    },
+    "environment": "Local Chromium, unthrottled; not a field Core Web Vitals measurement"
+  }
+]

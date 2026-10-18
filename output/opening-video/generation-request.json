@@ -1,0 +1,16 @@
+{
+  "model": "seedance_2_5",
+  "mode": "omni_reference",
+  "duration": 4,
+  "resolution": "720p",
+  "generate_audio": false,
+  "aspect_ratio": "1:1",
+  "count": 1,
+  "medias": [
+    {
+      "role": "start_image",
+      "value": "b2624ab0-df0e-4348-8a5b-9dac5271b3d0"
+    }
+  ],
+  "prompt": "Animate this exact botanical engraving on a perfectly static flat warm ivory #FAF7F1 ground. Preserve this bouquet composition, every flower and fine etched sage leaf detail, scale and color. Locked camera. During the first 1.4 seconds, a delicate organic breeze travels through the peripheral leaves and fine branching stems: they gently uncurl outward a small amount while the central flower remains stable. Then settle gracefully for the remainder. Elegant luxury wedding stationery brought to life, quiet and physically plausible motion, no new flowers, no morphing, no camera movement, no zoom, no text, no lettering, no logo, no monogram, no people, no architecture. Keep all original artwork inside frame. Silent."
+}
