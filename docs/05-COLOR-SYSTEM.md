@@ -3,13 +3,6 @@
 **Status:** LOCKED palette and semantic direction; final browser contrast QA NOT TESTED  
 **Principle:** Intricate Details, Restrained Composition
 
-**User-directed refinement (2026-10-16):** increase the visible Emerald Blue
-presence and reduce the uninterrupted Ivory impression. The palette is unchanged.
-Hero now uses an Emerald field with Ivory text, and The Wedding places the Ivory
-invitation on an Emerald surround. Opening names/frame, section headings and the
-filled RSVP selected state reinforce Emerald. These explicit corrections supersede
-the earlier Ivory-only mappings; other sections retain paper/White.
-
 ## 1. Locked primitive palette
 
 | Color | Hex | Role |
@@ -72,9 +65,9 @@ A semantic border role does not mandate one color. Choose a suitable palette col
 | Section | Direction |
 |---|---|
 | Opening | Warm Ivory canvas; selective Emerald Blue monogram/CTA accents; Deep Sage botanical details |
-| Hero | Emerald Blue field; Warm Ivory text; original botanical colors preserved |
+| Hero | Warm Ivory; selected White stationery surface; Emerald Blue monogram/accent |
 | Our Story | Warm Ivory/White in controlled composition; Deep Sage botanical framing; natural photography |
-| The Wedding | Ivory invitation on an Emerald Blue surround; Ivory countdown text; Champagne ornament |
+| The Wedding | Warm Ivory and White invitation surface; Emerald Blue accents; restrained Champagne ornament |
 | Venue | Warm Ivory; architectural illustration is the subject; botanical details secondary |
 | Gallery | Warm Ivory; photography dominates; minimal decoration |
 | RSVP | Warm Ivory or White; Warm Charcoal text; Emerald Blue selected state and interaction |

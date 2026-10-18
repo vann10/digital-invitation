@@ -14,7 +14,7 @@
 
 **Purpose:** Ceremonially introduce and activate the digital invitation.
 
-**Visual object:** Editorial Cover focused on the supplied couple monogram, couple names, rich colored botanical illustration from `public/assets`, generous whitespace, and the CTA `BUKA UNDANGAN`. The user approved this master-prompt refinement on 2026-10-15.
+**Visual object:** Editorial Cover focused on the couple monogram, couple names, complex botanical engraving/fine line-art, generous whitespace, and the CTA `BUKA UNDANGAN`.
 
 **Interaction flow:**
 1. Editorial Cover appears as the initial composition.

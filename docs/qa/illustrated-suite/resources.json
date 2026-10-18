@@ -1,0 +1,173 @@
+{
+  "initialNavigation": {
+    "cls": 0.0009912187075070884,
+    "lcp": 5184,
+    "scrollY": 4296,
+    "rsvpTop": 23.96875
+  },
+  "afterScroll": {
+    "initial": {
+      "cls": 0.0009912187075070884,
+      "lcp": 5184
+    },
+    "videoCount": 0,
+    "resources": [
+      {
+        "name": "/_next/static/css/app/layout.css",
+        "type": "link",
+        "transfer": 7647,
+        "decoded": 45311
+      },
+      {
+        "name": "/_next/static/css/app/page.css",
+        "type": "link",
+        "transfer": 5637,
+        "decoded": 22940
+      },
+      {
+        "name": "/_next/image",
+        "type": "link",
+        "transfer": 47124,
+        "decoded": 46824
+      },
+      {
+        "name": "/_next/image",
+        "type": "link",
+        "transfer": 184586,
+        "decoded": 184286
+      },
+      {
+        "name": "/_next/image",
+        "type": "link",
+        "transfer": 29452,
+        "decoded": 29152
+      },
+      {
+        "name": "/_next/static/chunks/webpack.js",
+        "type": "link",
+        "transfer": 28433,
+        "decoded": 140816
+      },
+      {
+        "name": "/_next/static/chunks/main-app.js",
+        "type": "script",
+        "transfer": 1759345,
+        "decoded": 7608594
+      },
+      {
+        "name": "/_next/static/chunks/app-pages-internals.js",
+        "type": "script",
+        "transfer": 62650,
+        "decoded": 251963
+      },
+      {
+        "name": "/_next/static/chunks/app/page.js",
+        "type": "script",
+        "transfer": 198846,
+        "decoded": 742978
+      },
+      {
+        "name": "/assets/optimized/paper-grain.webp",
+        "type": "css",
+        "transfer": 91356,
+        "decoded": 91056
+      },
+      {
+        "name": "/_next/static/media/13971731025ec697-s.p.woff2",
+        "type": "css",
+        "transfer": 37280,
+        "decoded": 36980
+      },
+      {
+        "name": "/_next/static/media/7b89a4fd5e90ede0-s.p.woff2",
+        "type": "css",
+        "transfer": 38076,
+        "decoded": 37776
+      },
+      {
+        "name": "/_next/static/media/e18f83c737786aa7-s.p.woff2",
+        "type": "css",
+        "transfer": 39604,
+        "decoded": 39304
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 3404,
+        "decoded": 3104
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 40050,
+        "decoded": 39750
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 5494,
+        "decoded": 5194
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 20598,
+        "decoded": 20298
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 4564,
+        "decoded": 4264
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 8396,
+        "decoded": 8096
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 277846,
+        "decoded": 277546
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 7012,
+        "decoded": 6712
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 13030,
+        "decoded": 12730
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 7014,
+        "decoded": 6714
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 26756,
+        "decoded": 26456
+      },
+      {
+        "name": "/_next/static/chunks/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js",
+        "type": "script",
+        "transfer": 2928,
+        "decoded": 6389
+      },
+      {
+        "name": "/favicon.ico",
+        "type": "other",
+        "transfer": 15386,
+        "decoded": 15086
+      }
+    ]
+  }
+}

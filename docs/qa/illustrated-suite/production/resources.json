@@ -1,0 +1,179 @@
+{
+  "initialNavigation": {
+    "cls": 0.02132701421800948,
+    "lcp": 2444,
+    "scrollY": 4191,
+    "rsvpTop": 23.59375
+  },
+  "afterScroll": {
+    "initial": {
+      "cls": 0.02132701421800948,
+      "lcp": 2444
+    },
+    "videoCount": 0,
+    "resources": [
+      {
+        "name": "/_next/image",
+        "type": "link",
+        "transfer": 47124,
+        "decoded": 46824
+      },
+      {
+        "name": "/_next/image",
+        "type": "link",
+        "transfer": 184586,
+        "decoded": 184286
+      },
+      {
+        "name": "/_next/image",
+        "type": "link",
+        "transfer": 29452,
+        "decoded": 29152
+      },
+      {
+        "name": "/_next/static/css/462bd6d0d7745038.css",
+        "type": "link",
+        "transfer": 6785,
+        "decoded": 33422
+      },
+      {
+        "name": "/_next/static/css/5fb3160afbce954a.css",
+        "type": "link",
+        "transfer": 4449,
+        "decoded": 16728
+      },
+      {
+        "name": "/_next/static/chunks/webpack-756c4a207ffdcae6.js",
+        "type": "link",
+        "transfer": 2077,
+        "decoded": 3493
+      },
+      {
+        "name": "/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+        "type": "script",
+        "transfer": 54658,
+        "decoded": 173019
+      },
+      {
+        "name": "/_next/static/chunks/255-ce8c7c75002f810b.js",
+        "type": "script",
+        "transfer": 46908,
+        "decoded": 173933
+      },
+      {
+        "name": "/_next/static/chunks/main-app-1edfd5d38dd34042.js",
+        "type": "script",
+        "transfer": 857,
+        "decoded": 557
+      },
+      {
+        "name": "/_next/static/chunks/481-0e0e3ce5cf55911a.js",
+        "type": "script",
+        "transfer": 8487,
+        "decoded": 22784
+      },
+      {
+        "name": "/_next/static/chunks/app/page-4c8bd38154b711ab.js",
+        "type": "script",
+        "transfer": 6987,
+        "decoded": 18340
+      },
+      {
+        "name": "/assets/optimized/paper-grain.webp",
+        "type": "css",
+        "transfer": 91356,
+        "decoded": 91056
+      },
+      {
+        "name": "/_next/static/media/7b89a4fd5e90ede0-s.p.woff2",
+        "type": "css",
+        "transfer": 38076,
+        "decoded": 37776
+      },
+      {
+        "name": "/_next/static/media/e18f83c737786aa7-s.p.woff2",
+        "type": "css",
+        "transfer": 39604,
+        "decoded": 39304
+      },
+      {
+        "name": "/_next/static/media/13971731025ec697-s.p.woff2",
+        "type": "css",
+        "transfer": 37280,
+        "decoded": 36980
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 3404,
+        "decoded": 3104
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 40050,
+        "decoded": 39750
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 20598,
+        "decoded": 20298
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 5494,
+        "decoded": 5194
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 4564,
+        "decoded": 4264
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 8396,
+        "decoded": 8096
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 277846,
+        "decoded": 277546
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 7012,
+        "decoded": 6712
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 13030,
+        "decoded": 12730
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 7014,
+        "decoded": 6714
+      },
+      {
+        "name": "/_next/image",
+        "type": "img",
+        "transfer": 26756,
+        "decoded": 26456
+      },
+      {
+        "name": "/favicon.ico",
+        "type": "other",
+        "transfer": 15386,
+        "decoded": 15086
+      }
+    ]
+  }
+}

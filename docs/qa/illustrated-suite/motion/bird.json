@@ -1,0 +1,86 @@
+[
+  {
+    "section": "hero",
+    "transform": "translate3d(304px, 684px, 0px) rotate(0deg)",
+    "opacity": "1",
+    "viewport": 390
+  },
+  {
+    "section": "our-story",
+    "transform": "translate3d(10px, 243px, 0px) rotate(0deg)",
+    "opacity": "0",
+    "viewport": 390
+  },
+  {
+    "section": "the-wedding",
+    "transform": "translate3d(304px, 270px, 0px) rotate(0deg)",
+    "opacity": "0",
+    "viewport": 390
+  },
+  {
+    "section": "venue",
+    "transform": "translate3d(10px, 630px, 0px) rotate(0deg)",
+    "opacity": "0",
+    "viewport": 390
+  },
+  {
+    "section": "gallery",
+    "transform": "translate3d(304px, 207px, 0px) rotate(0deg)",
+    "opacity": "0",
+    "viewport": 390
+  },
+  {
+    "section": "rsvp",
+    "transform": "translate3d(10px, 657px, 0px) rotate(0deg)",
+    "opacity": "1",
+    "viewport": 390
+  },
+  {
+    "section": "closing",
+    "transform": "translate3d(390px, 295px, 0px) rotate(6deg)",
+    "opacity": "0",
+    "viewport": 390
+  },
+  {
+    "section": "hero",
+    "transform": "translate3d(1292px, 684px, 0px) rotate(0deg)",
+    "opacity": "1",
+    "viewport": 1440
+  },
+  {
+    "section": "our-story",
+    "transform": "translate3d(10px, 243px, 0px) rotate(0deg)",
+    "opacity": "1",
+    "viewport": 1440
+  },
+  {
+    "section": "the-wedding",
+    "transform": "translate3d(1292px, 270px, 0px) rotate(0deg)",
+    "opacity": "1",
+    "viewport": 1440
+  },
+  {
+    "section": "venue",
+    "transform": "translate3d(10px, 630px, 0px) rotate(0deg)",
+    "opacity": "1",
+    "viewport": 1440
+  },
+  {
+    "section": "gallery",
+    "transform": "translate3d(1292px, 207px, 0px) rotate(0deg)",
+    "opacity": "1",
+    "viewport": 1440
+  },
+  {
+    "section": "rsvp",
+    "transform": "translate3d(10px, 657px, 0px) rotate(0deg)",
+    "opacity": "1",
+    "viewport": 1440
+  },
+  {
+    "section": "closing",
+    "transform": "translate3d(1440px, 295px, 0px) rotate(6deg)",
+    "opacity": "0",
+    "viewport": 1440
+  }
+]

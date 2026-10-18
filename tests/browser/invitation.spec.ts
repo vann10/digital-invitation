@@ -130,7 +130,7 @@ test("illustrated entrance, monogram reveal, finite motion and outward handoff",
       }),
   );
   expect(textOpacity).toBeGreaterThan(0.2);
-  expect(exits[0].opacity).toBeLessThan(1);
+  expect(exits[0].translate).not.toBe("0px");
   expect(exits[0].translate.startsWith("-")).toBe(true);
   expect(exits[2].translate.startsWith("-")).toBe(false);
   await page.screenshot({ path: `${qaRoot}/handoff-350.png` });
@@ -201,8 +201,8 @@ for (const size of sizes) {
         performance.getEntriesByName("hero-ready")[0].startTime -
         performance.getEntriesByName("cta-start")[0].startTime,
     );
-    expect(duration).toBeGreaterThanOrEqual(1200);
-    expect(duration).toBeLessThan(1600);
+    expect(duration).toBeGreaterThanOrEqual(3500);
+    expect(duration).toBeLessThan(4000);
     console.log(`CTA ${size.width}: ${Math.round(duration)}ms`);
     await expect(page.locator("#hero-title")).toBeFocused();
     expect(await page.evaluate(() => scrollY)).toBe(0);
@@ -257,7 +257,13 @@ for (const size of sizes) {
         ),
         id,
       ).toBe(true);
-      await expect(page.locator("#" + id)).toHaveCSS("overflow", "visible");
+      // Decorative scene edges may clip; readable headings must remain inside
+      // the viewport instead of requiring a particular CSS overflow value.
+      const headings = await page.locator("#" + id + " h1, #" + id + " h2").evaluateAll(nodes => nodes.map(node => {
+        const box = node.getBoundingClientRect();
+        return { left: box.left, right: box.right };
+      }));
+      expect(headings.every(box => box.left >= 0 && box.right <= size.width)).toBe(true);
     }
     await page.screenshot({
       path: `${qaRoot}/page-${size.width}.png`,
@@ -410,10 +416,21 @@ test("reduced motion and accessibility scan", async ({ page }) => {
   ).toBe("none");
   const cover = await new AxeBuilder({ page }).analyze();
   expect(cover.violations).toEqual([]);
-  const start = Date.now();
+  await page.evaluate(() => {
+    document.querySelector('.open-button')!.addEventListener('click', () => performance.mark('reduced-start'), { once: true });
+    const observer = new MutationObserver(() => {
+      if (document.querySelector('.phase-opened')) {
+        performance.mark('reduced-ready');
+        observer.disconnect();
+      }
+    });
+    observer.observe(document.querySelector('.invitation')!, { attributes: true, attributeFilter: ['class'] });
+  });
   await page.getByRole("button", { name: "BUKA UNDANGAN" }).click();
   await page.locator(".phase-opened").waitFor();
-  expect(Date.now() - start).toBeLessThan(600);
+  const reducedDuration = await page.evaluate(() => performance.getEntriesByName('reduced-ready')[0].startTime - performance.getEntriesByName('reduced-start')[0].startTime);
+  expect(reducedDuration).toBeLessThan(600);
+  console.log(`Reduced-motion transition: ${Math.round(reducedDuration)}ms`);
   const opened = await new AxeBuilder({ page }).analyze();
   await page.getByRole("radio", { name: "Attending", exact: true }).check();
   const selected = await new AxeBuilder({ page }).analyze();

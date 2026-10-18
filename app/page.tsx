@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "@/components/section-editorial.css";
+import { ScrollBird } from "@/components/scroll-bird";
 import Link from "next/link";
 import { Opening } from "@/components/opening";
 import { Artwork } from "@/components/artwork";
@@ -16,6 +17,7 @@ function Sections() {
   const photos = content.gallery.filter((photo) => photo.src);
   return (
     <SectionMotion>
+      <ScrollBird />
       <section id="hero" className="hero section" aria-labelledby="hero-title">
         <div className="hero-rule" aria-hidden="true" />
         <Artwork
@@ -25,7 +27,7 @@ function Sections() {
           sizes="(min-width: 1024px) 280px, 150px"
         />
         <div className="hero-illustration" aria-hidden="true">
-          <Artwork variant="doves" priority />
+          <Artwork variant="bouquet" priority />
         </div>
         <Artwork
           variant="leaves"
@@ -196,7 +198,7 @@ function Sections() {
               className="venue-illustration"
               data-reveal
               data-motion="engraving"
-              sizes="(max-width: 767px) 88vw, 390px"
+              sizes="(max-width: 767px) 88vw, 620px"
               quality={85}
             />
             <figcaption>ILUSTRASI REFERENSI · GANDRUNG</figcaption>

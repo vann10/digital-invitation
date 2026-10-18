@@ -1,58 +1,66 @@
-/* Two reviewable 1400ms handoffs. No video, persistent compositor layers,
-   body scroll locking, or dependence on decorative image decoding. */
-.opening-prototype .cover { background-color: #faf7f1; }
+/* 3600ms choreography: released frame, travelling branches, opening paper,
+   and overlapping Hero typesetting. Transforms preserve layout stability. */
+.opening-prototype .cover {
+  background-color: var(--ivory);
+}
 .opening-prototype .cover-art .artwork-motion {
   animation: plate-reveal 1200ms var(--arrival-delay) var(--ease) both;
 }
-.opening-prototype .cover-art--bottom img {
-  transform-origin: 40% 90%;
-  animation: branch-breath 2800ms 1500ms ease-in-out backwards;
-}
-.opening-prototype .cover-names {
-  animation: signature-in 700ms 450ms var(--ease) backwards;
-}
-.opening-prototype.phase-opening .open-button svg {
-  translate: 5px 0;
-}
-.opening-prototype.phase-opening .cover-art img {
-  animation: none;
-}
+.opening-prototype.phase-opening .cover-art img,
 .opening-prototype.phase-opening .cover-art .artwork-motion {
   animation: none;
 }
 .opening-prototype.phase-opening .opened-content {
   animation: none;
 }
-.opening-prototype.approach-dissolve.phase-opening .cover {
-  animation: cover-out 650ms 500ms ease both;
+.opening-prototype.phase-opening .cover {
+  animation: paper-aperture 2400ms 750ms cubic-bezier(0.65, 0, 0.2, 1) both;
 }
-.opening-prototype.approach-dissolve.phase-opening .cover-frame {
-  animation: frame-release 1100ms 100ms var(--ease) both;
+.opening-prototype.phase-opening .cover-frame {
+  animation: frame-release 2200ms 150ms var(--ease) both;
 }
-.opening-prototype.approach-lift.phase-opening .cover {
-  animation: sheet-lift 1100ms 200ms cubic-bezier(0.65, 0, 0.2, 1) both;
-}
-.opening-prototype.approach-lift.phase-opening .cover-art {
+.opening-prototype.phase-opening .cover-content {
   animation: none;
 }
-.opening-prototype.approach-lift.phase-opening .cover-content {
-  animation: cover-type-out 350ms 100ms ease both;
+.opening-prototype.phase-opening .cover-content > .monogram {
+  animation: seal-release 1800ms 250ms var(--ease) both;
+}
+.opening-prototype.phase-opening .cover-names {
+  animation: names-release 1700ms 500ms var(--ease) both;
+}
+.opening-prototype.phase-opening .cover-content > .eyebrow,
+.opening-prototype.phase-opening .cover-content > .fine-rule,
+.opening-prototype.phase-opening .cover-content form {
+  animation: ink-release 650ms 150ms ease both;
+}
+.opening-prototype.phase-opening .cover-art {
+  animation: botanical-travel 2600ms var(--arrival-delay)
+    cubic-bezier(0.45, 0, 0.18, 1) both;
 }
 .opening-prototype:is(.phase-opening, .phase-opened) #hero .hero-copy {
-  animation: invitation-ink 650ms 650ms var(--ease) backwards;
+  animation: hero-typeset 1400ms 1700ms var(--ease) backwards;
+}
+.opening-prototype:is(.phase-opening, .phase-opened) #hero .hero-names > * {
+  animation: hero-line 1100ms 2100ms var(--ease) backwards;
+}
+.opening-prototype:is(.phase-opening, .phase-opened)
+  #hero
+  .hero-names
+  > :last-child {
+  animation-delay: 2450ms;
 }
 .opening-prototype:is(.phase-opening, .phase-opened) #hero .hero-illustration {
-  animation: garden-settle 750ms 600ms var(--ease) backwards;
+  animation: garden-unfold 1900ms 1300ms var(--ease) backwards;
 }
 .opening-prototype:is(.phase-opening, .phase-opened) #hero .hero-garden,
 .opening-prototype:is(.phase-opening, .phase-opened) #hero .hero-leaves {
-  animation: garden-settle 700ms 550ms var(--ease) backwards;
+  animation: garden-unfold 1700ms 1600ms var(--ease) backwards;
 }
 @keyframes plate-reveal {
   from {
     opacity: 0;
-    clip-path: inset(0 0 100% 0);
-    translate: 0 10px;
+    clip-path: inset(0 0 100%);
+    translate: 0 12px;
   }
   to {
     opacity: 1;
@@ -60,57 +68,105 @@
     translate: 0 0;
   }
 }
-@keyframes branch-breath {
-  0%,
-  100% {
-    transform: rotate(0);
+@keyframes paper-aperture {
+  0% {
+    clip-path: polygon(
+      0 0,
+      50% 0,
+      50% 100%,
+      50% 100%,
+      50% 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
   }
-  50% {
-    transform: rotate(1.5deg);
+  100% {
+    clip-path: polygon(
+      0 0,
+      0 0,
+      0 100%,
+      100% 100%,
+      100% 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+}
+@keyframes botanical-travel {
+  25% {
+    opacity: 1;
+  }
+  to {
+    translate: var(--exit-x) var(--exit-y);
+    rotate: 8deg;
+    opacity: 0;
   }
 }
 @keyframes frame-release {
   to {
-    transform: scale(1.04);
+    scale: 1.18 1.06;
     opacity: 0;
   }
 }
-@keyframes sheet-lift {
+@keyframes seal-release {
+  25% {
+    opacity: 1;
+  }
+  to {
+    translate: 0 -100px;
+    scale: 0.8;
+    opacity: 0;
+  }
+}
+@keyframes names-release {
+  to {
+    translate: 0 -45px;
+    letter-spacing: 0.08em;
+    opacity: 0;
+  }
+}
+@keyframes ink-release {
+  to {
+    opacity: 0;
+    translate: 0 -8px;
+  }
+}
+@keyframes hero-typeset {
   from {
+    opacity: 0;
+    translate: 0 35px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@keyframes hero-line {
+  from {
+    clip-path: inset(0 0 100%);
+    translate: 0 24px;
+  }
+  to {
     clip-path: inset(0);
-  }
-  to {
-    clip-path: inset(0 0 100% 0);
+    translate: 0 0;
   }
 }
-@keyframes invitation-ink {
+@keyframes garden-unfold {
   from {
     opacity: 0;
-    translate: 0 10px;
+    translate: 35px 70px;
+    rotate: -8deg;
   }
   to {
     opacity: 1;
     translate: 0 0;
-  }
-}
-@keyframes garden-settle {
-  from {
-    opacity: 0;
-    translate: 0 18px;
-  }
-  to {
-    opacity: 1;
-    translate: 0 0;
+    rotate: 0deg;
   }
 }
 @media (prefers-reduced-motion: reduce) {
   .opening-prototype.phase-opening .cover {
     opacity: 0;
-  }
-}
-@media (max-width: 359px) {
-  .opening-prototype #hero .hero-garden {
-    width: 125px;
-    right: -80px;
   }
 }

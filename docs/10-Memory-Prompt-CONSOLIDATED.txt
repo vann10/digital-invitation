@@ -1,0 +1,57 @@
+PROJECT MEMORY — RIZAL & DEWI DIGITAL INVITATION
+Creative Direction v2. Read canonical docs before implementation.
+
+## Goal
+Create a bespoke luxury high-fashion wedding invitation: illustrated stationery brought to life digitally. Visual character is romantic, editorial, textured, richly illustrated, and refined—not generic, overly sparse, or UI-template-like.
+
+## Reference direction
+Use the supplied eight section illustrations as the visual baseline:
+- warm ivory paper-like surfaces with visible subtle texture;
+- intricate botanical engraving and realistic sketch details;
+- varied illustration placement and density from section to section;
+- editorial typography, fine ornamental rules/borders, monogram;
+- architectural and landscape artwork;
+- varied editorial photography;
+- different section compositions unified by one art direction.
+
+The supplied video is a reference for cinematic, continuous motion and layered artwork. Do not copy its unrelated names, content, or palette.
+
+## Hard requirements
+- Do not invent wedding facts, couple history, venue architecture, or final photos.
+- Preserve the eight-section sequence unless the user changes it.
+- Preserve accessibility, privacy/security, and RSVP rules in canonical docs.
+- RSVP choices only: `Attending` and `Unable to Attend`.
+- Frontend: Next.js + TypeScript. RSVP backend: Supabase.
+- One individual per invitation link; first accepted RSVP is final.
+- Operator export access requires private login; spreadsheet/export, not a bespoke dashboard.
+- Honor keyboard access and `prefers-reduced-motion`.
+
+## Visual identity baseline
+Palette: Emerald Blue #174A4A, Warm Ivory #FAF7F1, White #FFFFFF, Muted Sage #899783, Deep Sage #596957, Champagne #B79A68, Warm Charcoal #393534, Soft Brown #746A66.
+Warm ivory is the primary surface family; color proportions may vary by section. Champagne is ornamental, not low-contrast functional text.
+Typography: Cormorant Garamond display; DM Sans supporting/functional. Script is optional and not selected.
+
+## Creative latitude
+Treat art direction as a creative brief, not a rigid wireframe. The agent may choose composition, crop, scale, layering, texture intensity, border details, section-specific background treatments, responsive layout, and animation choreography.
+Keep the overall art direction coherent, but do not force every section to use the same background, flower cluster, card, or layout.
+Avoid conspicuous empty space, especially in Opening, Hero, Venue details, and Gallery. Use purposeful richness, not clutter.
+When a decision is not specified, make a thoughtful design decision rather than asking for approval for every detail. Ask only when a hard requirement conflicts or essential factual content is missing.
+
+## Opening → Hero
+CTA `BUKA UNDANGAN` triggers a smooth, luxurious 3–4 second transition. Do not rely on fade alone. Move/recompose selected assets: botanical branches, monogram, borders, paper layers, typography, and/or landscape elements. The Hero is a distinct composition and must appear without scrolling. The 3–4 second duration is a target; don't delay access unnecessarily. Reduced-motion mode must provide a short or immediate alternative.
+
+## Persistent bird
+Include a realistic-sketch bird that matches the botanical style and changes position as the user scrolls. Use smooth authored paths/waypoints and section-aware movement. It may fly, pause, or re-enter. Do not obstruct text, faces, CTA, or controls. Reduce or disable movement for `prefers-reduced-motion`; decorative bird should be hidden from assistive technology.
+
+## Eight sections
+1. Opening: textured cover, monogram, names, botanical detail, CTA.
+2. Hero: opened invitation plate with names/date/location and substantial illustration; avoid excessive dead space.
+3. Our Story: editorial letter, botanical framing, approved personal copy.
+4. The Wedding: event details and integrated countdown.
+5. Venue: architectural illustration, venue details, location action.
+6. Gallery: varied editorial sequence of real supplied photos; no generic grid/autoplay carousel.
+7. RSVP: two approved options only; accessible selection and submission.
+8. Closing: monogram, closing copy, substantial final illustration/scene.
+
+## Quality bar
+Judge the rendered experience, not token compliance alone. It should feel bespoke, visually rich, varied by section, legible, responsive, performant, and accessible. Do not silently change factual, security, RSVP, or explicitly user-locked decisions.

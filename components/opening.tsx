@@ -36,7 +36,7 @@ export function Opening({
     window.scrollTo({ top: 0, behavior: "instant" });
     timer.current = setTimeout(
       () => setPhase("opened"),
-      matchMedia("(prefers-reduced-motion: reduce)").matches ? 100 : 1400,
+      matchMedia("(prefers-reduced-motion: reduce)").matches ? 100 : 3600,
     );
   }
   return (
@@ -53,7 +53,7 @@ export function Opening({
         <div className="cover-frame" aria-hidden="true" />
         <Artwork priority className="cover-art cover-art--top" />
         <Artwork
-          variant="leaves"
+          variant="bouquet"
           priority
           className="cover-art cover-art--bottom"
         />

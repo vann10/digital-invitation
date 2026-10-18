@@ -4,7 +4,7 @@ Next.js 15 + TypeScript editorial wedding invitation. Eight sections, a richly i
 
 ## Run
 
-Latest phased visual revision: [editorial elevation audit and QA](docs/EDITORIAL-ELEVATION.md).
+Latest visual revision: [illustrated suite v2 and QA](docs/ILLUSTRATED-SUITE-QA.md).
 It reuses the existing illustration family, brings Hero entrances into the cover
 crossfade, enriches section-specific framing, and serves the supplied Venue art
 through a lossless responsive derivative. Actual wedding content remains pending.
@@ -22,7 +22,7 @@ npm run dev
 
 Open http://localhost:3000. For a production preview: `npm run build`, then `npm start`.
 
-The `BUKA UNDANGAN` button works immediately during the 1.6–1.92-second botanical entrance. The supplied monogram fades/scales in after the botanical entrance begins. Motion is finite and varies by material: typography wipes, a letter emerging from an envelope, architectural engraving and photography reveals. The pause control has been removed as requested. Activation uses a 1.4-second outward-artwork/crossfade handoff, or a 100ms state change with reduced motion. With JavaScript disabled, the native button navigates to `/?open=1`; all invitation content remains accessible. RSVP requires JavaScript and a personal invitation.
+The `BUKA UNDANGAN` button works immediately during the botanical entrance. Activation starts a 3.6-second sequence: the border releases, branches travel outward, the monogram lifts, the cover opens through a central mask, and Hero typography and botanical artwork assemble underneath. Reduced motion uses a 100ms state change. Existing naturalist doves follow authored section positions along the page margins, disappearing when they would overlap readable content. With JavaScript disabled, the native button navigates to `/?open=1`; all invitation content remains accessible. RSVP requires JavaScript and a personal invitation.
 
 ## Content and assets
 
@@ -30,7 +30,7 @@ The `BUKA UNDANGAN` button works immediately during the 1.6–1.92-second botani
 - Gallery currently shows one honest pending-content notice. Approved local photo paths in the central register populate the varied vertical photo sequence; empty entries are not rendered as repeated placeholders. Supply descriptive alt text and approved order before launch.
 - Original supplied monogram is reused through Next Image. Existing source artwork and lossless copies are preserved. `npm run assets:optimize` regenerates the existing copies only when source art changes.
 - `components/artwork.tsx` delivers the supplied full-detail bouquet, tall ornament and leaf illustrations through Next Image. The former code-generated SVG botanical and its drawing CSS have been removed. Venue uses the supplied gandrung-venue-lineart-black-white.svg intact; factual venue details remain pending.
-- Hero and the Wedding surround use Emerald Blue; the cover retains Ivory paper with Emerald names/frame. Botanical artwork clips only at the screen edge. Hamburger, bottom navigation and pause controls are removed. Individual layers reveal once on arrival and respect reduced motion. Doves and a butterfly complement the reused botanical assets.
+- Opening and Hero use Warm Ivory with restrained texture; the Wedding surround uses Emerald Blue. Each section has its own framing, artwork scale and composition. Individual layers reveal once on arrival and respect reduced motion. Doves and a butterfly reuse the existing botanical asset family.
 - See [asset register](docs/08-CONTENT-AND-ASSET-REGISTER.md), [decisions](docs/IMPLEMENTATION-DECISIONS.md), [current QA](docs/NATURE-EDITORIAL-QA.md), and [launch checklist](docs/LAUNCH-CHECKLIST.md).
 
 Music starts from the Opening gesture and has a floating play/stop control. The temporary sample is Reverie by Scott Buckley, available on YouTube and delivered using the official CC BY 4.0 audio download. Replace music and attribution in data/invitation.ts. See [asset provenance and generation prompts](docs/NATURE-ASSET-PROVENANCE.md).

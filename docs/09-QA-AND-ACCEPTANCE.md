@@ -1,121 +1,93 @@
-# QA & Acceptance Criteria — Rizal & Dewi Digital Invitation
+# QA and Acceptance — Rizal & Dewi Digital Invitation
 
-## Approved master-prompt checks — 2026-10-15
+**Purpose:** Verify function, legibility, responsiveness, and art direction. Passing a checklist alone does not guarantee strong design.
 
-The user approved rich supplied botanical illustrations, subtle paper texture, entrance/idle/exit motion, and removal of generated line-art. Current execution evidence belongs in [MASTER-IMPLEMENTATION-QA.md](MASTER-IMPLEMENTATION-QA.md) and `qa/master-implementation/`. Earlier evidence does not establish a pass for the revised implementation.
+## 1. Creative quality review
 
-- [ ] All displayed botanicals use supplied artwork, preserving shading, detail, color and transparency.
-- [ ] Paper grain is subtle and distinct from the artwork's own texture; it does not tint photographs.
-- [ ] Botanical groups enter from different directions in approximately 1.4–2.0s; monogram follows with fade/scale.
-- [ ] Idle cycles are subtle (6–12s), pauseable, paused in hidden tabs, disabled for reduced motion and stopped on exit.
-- [ ] CTA remains available before decorative motion finishes; duplicate activation is guarded.
-- [ ] Botanical exit travels outward and fades, monogram shrinks/fades, and the separate Hero is revealed within 1.2–1.6s.
-- [ ] Actual mobile/desktop screenshots are compared against all section references; missing content/assets remain explicit.
+Review the actual rendered website, not just the source code or design tokens.
 
-## Implementation evidence — 2026-10-15
+- [ ] Overall atmosphere resembles premium illustrated wedding stationery brought to life.
+- [ ] Warm ivory surfaces show subtle, visible texture where appropriate.
+- [ ] Botanical artwork is intricate and consistent in style, but not copied into identical positions on every section.
+- [ ] Architecture, landscapes, monogram, and photographs have enough scale to matter.
+- [ ] Each section has a distinct composition while sharing typography, palette, and illustration language.
+- [ ] Opening, Hero, Venue details, and Gallery do not contain conspicuous accidental empty space.
+- [ ] Richness does not compromise text contrast or interaction clarity.
+- [ ] The design avoids generic wedding-template, SaaS, scrapbook, or over-decorated patterns.
+- [ ] The page feels composed at real mobile dimensions, not merely at a desktop preview size.
 
-The original checklist below is the canonical release gate; unchecked items must not be interpreted as passed merely because code exists. Scoped execution results, fixes, viewports, screenshots, command outputs and remaining limits are now recorded in [QA-REPORT.md](QA-REPORT.md) and `qa/`. Release remains **BLOCKED** by real content/assets, acceptance of backend proposals and live Supabase configuration. The historical evidence table below describes the baseline before this implementation; use the dated report for current verified results.
+## 2. Opening and transition
 
-**Status:** Criteria defined; execution NOT TESTED unless a result is recorded  
-**Purpose:** Define what must be checked before launch. This checklist is not evidence that checks have passed.
+- [ ] `BUKA UNDANGAN` works with pointer and keyboard.
+- [ ] The Opening is a distinct composition from the Hero.
+- [ ] Transition target is approximately 3–4 seconds, without unnecessary waiting.
+- [ ] Transition uses meaningful movement/recomposition of assets, not only fade-in/fade-out.
+- [ ] At least some visual continuity is created between Opening and Hero where appropriate.
+- [ ] Motion is smooth, staggered, and intentional; no jitter, bounce, or distracting effects.
+- [ ] The Hero becomes available without scrolling.
+- [ ] Reduced-motion mode gives a short/quiet alternative and preserves all content.
+- [ ] No major layout shift or late-loading artwork disrupts the sequence.
 
-## 1. Visual consistency
+## 3. Bird motif
 
-- [ ] Locked palette and semantic tokens are used consistently.
-- [ ] Cormorant Garamond and DM Sans are applied according to role.
-- [ ] Script family remains unused or pending until selected.
-- [ ] Botanical engraving is detailed but does not overwhelm composition.
-- [ ] Whitespace and controlled asymmetry are preserved.
-- [ ] Borders, shadows, radius, and texture remain restrained.
-- [ ] Photography remains natural and visually dominant in Gallery.
-- [ ] No generic wedding-template, SaaS, scrapbook, or overly decorative drift.
+- [ ] A realistic-sketch bird matches the botanical illustration language.
+- [ ] The bird changes position in response to scrolling/section progress.
+- [ ] Movement follows smooth authored paths or waypoints; no random jitter.
+- [ ] The bird does not obscure copy, faces, links, CTA, or RSVP controls.
+- [ ] Touch interaction remains usable.
+- [ ] Reduced-motion mode keeps the bird static or limits it to discrete, low-motion changes.
+- [ ] Decorative bird art is hidden from assistive technology.
 
-## 2. Opening experience
+## 4. Section-specific checks
 
-- [ ] Editorial Cover is the initial composition.
-- [ ] Monogram, couple names, botanical engraving, whitespace, and `BUKA UNDANGAN` have the intended hierarchy.
-- [ ] CTA activates by pointer, touch, Enter, and Space as appropriate for a semantic button.
-- [ ] CTA pressed/activation response is restrained and perceivable.
-- [ ] Selected cover elements reveal or move in the intended sequence.
-- [ ] Cover transitions to the separate Hero composition after activation.
-- [ ] Hero transition does not require scrolling.
-- [ ] Target transition duration (approximately 1.2–1.6 seconds) is checked in a real browser.
-- [ ] Keyboard focus is visible and the CTA has an accessible name.
-- [ ] Reduced-motion behavior shortens or removes motion without removing content or functionality.
-- [ ] Normal scrolling works after the transition; no scroll trap remains.
-- [ ] Mobile cover layout has no clipped content, CTA overlap, or horizontal overflow.
+- [ ] Opening has texture, monogram/names, botanical detail, and a clear CTA.
+- [ ] Hero reads as a composed invitation plate; no accidental empty central field.
+- [ ] Our Story is readable and uses only supplied/approved personal content.
+- [ ] The Wedding makes date, time, venue, and location easy to scan; countdown is integrated.
+- [ ] Venue architecture has presence; actual architecture is not fabricated.
+- [ ] Gallery prioritizes real photos, varied scale/crop, and an editorial sequence; no generic grid or autoplay carousel.
+- [ ] RSVP offers only `Attending` and `Unable to Attend`, with accessible selection state.
+- [ ] Closing feels like a final designed plate, not an empty generic footer.
 
-## 3. Section and responsive behavior
+## 5. Responsive and performance
 
-- [ ] All eight sections appear in the approved order.
-- [ ] Hero contains no photography, countdown, RSVP CTA, or long-form copy.
-- [ ] Countdown appears in The Wedding, not as a standalone section.
-- [ ] Venue CTA reads `VIEW LOCATION` and opens a valid map URL.
-- [ ] Gallery is a vertical editorial photo sequence, not a generic grid/autoplay carousel.
-- [ ] Desktop is editorially re-composed rather than simply enlarged.
-- [ ] Mobile, tablet, and desktop have no horizontal overflow, clipped text, or illustration overlap.
-- [ ] Touch targets remain comfortable.
+- [ ] Mobile composition retains the artwork's intended richness without clipping.
+- [ ] Desktop is recomposed thoughtfully rather than stretched from mobile.
+- [ ] No horizontal overflow, overlapping text, or inaccessible controls.
+- [ ] Texture and illustrations are optimized; large assets do not block interaction.
+- [ ] Scroll-linked animation remains smooth enough on representative devices.
+- [ ] No unnecessary layout thrashing or expensive continuous effects.
+- [ ] Image loading, font loading, and transition timing have been tested in-browser.
 
-## 4. RSVP and backend
+## 6. Accessibility
 
-- [ ] Only `Attending` and `Unable to Attend` are accepted.
-- [ ] No unapproved fields are displayed or submitted.
-- [ ] Editorial selection indicator is visually clear.
-- [ ] Underlying choice control has correct single-choice semantics.
-- [ ] Selection/focus is keyboard accessible.
-- [ ] Selection state is not communicated by color alone.
-- [ ] Success is shown only after backend confirmation.
-- [ ] Failure preserves the selected choice and gives clear retry behavior where appropriate.
-- [ ] One invitation link is associated with one individual.
-- [ ] First accepted response is final according to the locked policy.
-- [ ] Invalid and duplicate submissions are handled safely.
-- [ ] Private operator authentication is required for exports.
-- [ ] Public clients cannot access unrestricted guest records or service-role secrets.
+- [ ] Contrast meets WCAG AA baseline: 4.5:1 normal text and 3:1 large text.
+- [ ] Keyboard focus is visible and controls are keyboard-operable.
+- [ ] Semantic headings, buttons, links, and form controls are used.
+- [ ] RSVP selected state does not rely on color alone.
+- [ ] Reduced motion preserves content and functionality.
+- [ ] Decorative imagery is marked appropriately; meaningful images have suitable alt text.
 
-## 5. Accessibility and motion
+## 7. RSVP and technical acceptance
 
-- [ ] Normal text contrast is at least 4.5:1.
-- [ ] Large text contrast is at least 3:1.
-- [ ] Keyboard focus is visible.
-- [ ] Semantic heading order and reading order are logical.
-- [ ] Images have suitable alt text.
-- [ ] Reduced motion does not hide information or functionality.
-- [ ] RSVP feedback is understandable to assistive technology.
-- [ ] No essential information is hidden exclusively behind animation.
+Follow `07-TECHNICAL-ARCHITECTURE.md` for security and backend requirements. At minimum:
+- [ ] One personal invitation link resolves to the correct invitee.
+- [ ] Invalid/unknown identifiers do not expose guest data.
+- [ ] Only the two approved RSVP responses are accepted.
+- [ ] Duplicate and second submissions follow the final-response policy.
+- [ ] Success appears only after backend confirmation.
+- [ ] Failed submission preserves the choice and gives an appropriate retry path.
+- [ ] Operator authentication and private export access are enforced.
+- [ ] Secrets remain server-side.
+- [ ] Technical checks are evidenced; do not mark them complete based only on documentation.
 
-## 6. Content and production data
+## 8. Reporting
 
-- [ ] Actual wedding date and time confirmed.
-- [ ] Venue, full address, and map URL confirmed.
-- [ ] Our Story copy and format approved.
-- [ ] RSVP question/copy approved.
-- [ ] Closing copy approved.
-- [ ] Final monogram and venue artwork approved.
-- [ ] Gallery photography and order approved.
-- [ ] Script typeface decision documented if needed.
+For each failed check, record:
+1. device/viewport and browser;
+2. the section or interaction;
+3. what was observed;
+4. severity and proposed correction;
+5. whether the correction was verified afterward.
 
-## 7. Evidence log
-
-For every check, record date, environment/device, result, defect, and follow-up. Do not mark a check passed without evidence.
-
-| Check group | Status | Evidence |
-|---|---|---|
-| Visual QA | NOT TESTED | Pending implementation/browser review |
-| Responsive QA | NOT TESTED | Pending viewport testing |
-| Accessibility QA | NOT TESTED | Pending keyboard/contrast/screen-reader checks |
-| Opening motion QA | NOT TESTED | Pending browser review including reduced motion |
-| RSVP/backend QA | NOT TESTED | Pending Supabase implementation and test cases |
-| Deployment/security QA | NOT TESTED | Pending production configuration and access tests |
-
-Catatan audit
-Ada dua hal yang perlu diperhatikan.
-1. Kriteria penerimaan sudah cukup luas, tetapi belum seluruhnya kuantitatif.
-Sebagian besar kriteria sudah bisa digunakan sebagai checklist. Namun, beberapa hal—seperti kelancaran animasi, kenyamanan touch target, dan tidak adanya overlap—masih memerlukan definisi pengujian yang lebih spesifik saat implementasi. Kita tidak perlu menambahkan angka sembarang sebelum kebutuhan dan lingkungan pengujian ditentukan.
-2. Data produksi merupakan bagian dari kesiapan rilis.
-Dokumen ini benar karena tidak hanya memeriksa kode dan tampilan, tetapi juga mensyaratkan tanggal pernikahan, venue, cerita, foto, monogram, dan konten lainnya sudah disetujui sebelum undangan dianggap siap dirilis.
-Satu catatan tambahan: tabel Evidence Log masih berupa status awal. Nanti, status NOT TESTED hanya boleh diubah setelah hasil pengujian benar-benar tersedia.
-
-
-## Current user override — nature editorial revision
-
-The latest explicit user request supersedes earlier ambient-loop, pause-control and navigation requirements: remove hamburger/bottom navigation and animation pause controls; use finite varied editorial motion with reduced-motion support. Opening handoff remains approximately 1.4 seconds. Music begins on Opening activation with a floating play/stop control. See [current QA](NATURE-EDITORIAL-QA.md) for evidence and remaining release blockers.
+A checkbox is not evidence by itself. Mark checks `NOT TESTED` until verified.

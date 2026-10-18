@@ -1,146 +1,79 @@
-# Opening Experience Specification — Rizal & Dewi
+# Opening Experience — Cinematic Cover to Hero
 
-**Status:** LOCKED — art direction approved  
-**Core principle:** Ceremonial interaction, invisible interface  
-**Experience:** Editorial Cover → CTA activation → sequential editorial reveal → separate Hero composition
+**Status:** Creative direction approved; implementation details open to exploration.  
+**Primary interaction:** Guest activates `BUKA UNDANGAN`.
 
-## Approved master-prompt refinement — 2026-10-15
+## 1. Experience goal
 
-The user explicitly approved the master implementation plan, its paper texture and motion, and replacement of all code-generated botanical line-art with supplied `public/assets` illustrations. Where older wording below conflicts, this approved refinement governs:
+The Opening should feel like a bespoke invitation cover coming alive. On activation, the artwork should choreograph itself into a transition that leads naturally into the Hero. The effect should feel luxurious, smooth, layered, and memorable—not like a standard fade between two screens.
 
-- Preserve rich colored, dimensional botanical artwork and the original RD monogram. No replacement line drawing is required.
-- Initial botanical entrance: different directions with stagger, 1.4–2.0 seconds. Monogram follows through opacity and slight scale-in. CTA is available throughout.
-- Subtle living motion: 6–12 second cycles, with a pause/resume control; paused when the page is hidden and stopped on cover exit.
-- CTA transition: settle idle motion, move artwork outward and fade, slightly shrink/fade the monogram, crossfade to the separate Hero in 1.2–1.6 seconds.
-- Reduced motion: full static artwork, no idle motion, at most a short state transition.
-- Subtle warm ivory paper texture is approved. No heavy grain, distortion, recoloring, or damaged transparency.
+**Target duration:** approximately **3–4 seconds** for the full Opening-to-Hero sequence. This is an experience target, not a requirement to keep guests waiting. Keep motion purposeful and let the Hero become usable as soon as the transition finishes. Consider a skip/fast path for repeat visits if it improves usability.
 
-Earlier path-drawing-only direction is **DEPRECATED**. Section order, interaction semantics, accessibility, content restrictions and performance requirements remain binding. New QA evidence is recorded separately in `qa/master-implementation/`.
+## 2. Initial Opening composition
 
-## 1. Concept
+Use the supplied `01-Opening` image as visual direction:
+- Warm ivory paper-like background with fine texture.
+- Ornate but controlled frame/rule.
+- Intricate botanical illustration with cream flowers, sage/emerald foliage, and champagne accents.
+- Prominent couple monogram and `RIZAL & DEWI`.
+- Clear `BUKA UNDANGAN` CTA.
+- Meaningful artwork near the top and bottom edges; avoid an empty central column that feels unfinished.
 
-The Opening is a premium editorial cover that ceremonially introduces the digital wedding invitation. It is a distinct composition, separate from the Hero.
+The reference is not a fixed wireframe. The agent may adjust composition, scale, borders, artwork placement, and typography to suit the actual viewport.
 
-**Locked object:** an Editorial Cover built around the couple monogram, couple names, complex botanical engraving/fine line-art, generous whitespace, and the primary CTA `BUKA UNDANGAN`.
+## 3. Transition choreography
 
+Create a coherent multi-layer movement. Do not rely on opacity changes alone.
 
-## 2. Interaction sequence
+A possible choreography—not a mandatory implementation—is:
 
-`EDITORIAL COVER — INITIAL STATE`
-→ guest activates `BUKA UNDANGAN` by pointer or keyboard
-→ CTA gives a restrained pressed/activation response
-→ cover elements reveal or move in a deliberate sequence
-→ the cover composition transitions away
-→ the separate Hero composition becomes visible
-→ normal page scrolling continues
+1. **Activation (0.0–0.3s):** CTA responds with a subtle press, light, or ornamental rule movement.
+2. **Artwork responds (0.2–1.2s):** selected leaves, floral branches, border lines, or decorative elements move, draw, slide, or scale with restrained depth.
+3. **Monogram and typography move (0.5–1.8s):** the monogram can separate into fine ornamental layers, scale, travel, or resolve into the Hero's typographic composition. Couple names may move along a coordinated path rather than simply vanish.
+4. **Composition transforms (1.0–2.8s):** the cover's framing, paper texture, botanical branches, and ornaments shift or recompose. Some assets can travel toward the edges while others become Hero framing.
+5. **Hero assembles (2.0–3.7s):** Hero typography, background details, landscape/botanical illustration, and ornamental elements enter in a coordinated sequence.
+6. **Settle (up to 4.0s):** the scene settles into a stable composition; normal scrolling is available.
 
-The Opening and Hero are two separate compositions. The Hero must appear as the result of activating the CTA; scrolling must not be required to reveal it.
+The agent should invent the actual choreography based on available assets. Use motion paths and transforms where they make visual sense; avoid mechanically moving every asset just because it can move. Movement should imply continuity between compositions.
 
-## 3. Visual hierarchy
+## 4. Asset continuity
 
-### Editorial Cover — initial state
-1. Couple monogram
-2. Couple names: `RIZAL & DEWI`
-3. Complex botanical engraving / fine line-art
-4. Generous negative space and precise editorial framing
-5. Primary CTA: `BUKA UNDANGAN`
-6. Supporting micro-copy only if approved and needed
+Whenever possible, reuse or visually connect selected assets across the transition:
+- botanical branch travels from the cover edge into the Hero edge;
+- fine border or ornamental line expands, retracts, or changes its role;
+- monogram scales or resolves into a new position;
+- paper texture remains continuous while the composition changes;
+- small decorative motifs move to make room for the Hero hierarchy.
 
-The initial cover should feel composed and intriguing without exposing all wedding information or competing with the CTA.
+Assets do not all need to be reused. The Hero should still feel like a distinct composition, not merely the Opening with different text.
 
-### Activation and transition state
-1. CTA activation feedback
-2. Sequential movement/reveal of selected cover elements
-3. Restrained transition of the cover composition
-4. Clear reveal of the separate Hero composition
+## 5. Motion quality
 
-Names and essential information must remain legible, and the animation must not delay access unnecessarily.
+Preferred qualities:
+- smooth, intentional acceleration/deceleration;
+- staggered timing and overlapping movement;
+- moderate parallax/depth through scale, position, masking, and layering;
+- graceful handoff between elements;
+- enough visual detail to reward attention without delaying access to information.
 
-## 4. Material and composition
+Avoid:
+- fade-in/fade-out as the only transition technique;
+- generic zoom-only transitions;
+- bounce/elastic easing, spinning, shattering, flashy particles, or heavy 3D;
+- motion that obscures the names or CTA for too long;
+- scroll locking after the Hero is ready;
+- loading large assets only after the transition begins.
 
-- Background: Warm Ivory `#FAF7F1`.
-- Editorial cover: clean digital stationery with a restrained border or fine rule only where composition benefits.
-- Surface treatment: flat and refined; subtle material cues only, with no prominent paper grain or heavy shadow.
-- Whitespace: generous and intentional.
-- Mobile: keep all primary elements and the CTA comfortably within the viewport, with responsive spacing and no clipping.
-- Desktop: re-compose with controlled asymmetry and deliberate negative space rather than enlarging the mobile layout.
-- The Hero is a separate composition with its own clear visual hierarchy.
+## 6. Technical and accessibility requirements
 
-Avoid heavy paper grain, distressed texture, strong noise, vignette, large gradients, floating particles, background clutter, and decorative objects that compete with the names or CTA.
+- CTA must be a semantic button and work with pointer and keyboard.
+- Keep a visible focus state.
+- Respect `prefers-reduced-motion`. In reduced-motion mode, provide a short, calm transition or immediate Hero reveal while preserving all content and meaning.
+- Prevent layout shift and avoid blocking interaction longer than necessary.
+- Use transform/opacity/masks where possible for performance; avoid expensive continuous filters on large surfaces.
+- Test on real mobile viewport sizes and lower-powered devices.
+- The Hero must be revealed by CTA activation, not by scrolling.
 
-## 5. Illustration
+## 7. Creative latitude
 
-Complex botanical engraving / fine line-art: fine strokes, detailed leaves and veins, organic curves, intertwined stems, intricate flowers, and refined negative space.
-
-Botanical art is an editorial framing element, not a generic floral background. Use controlled asymmetry and preserve text legibility.
-
-- Primary botanical: Deep Sage `#596957` and selective Emerald Blue `#174A4A`.
-- Secondary botanical: Muted Sage `#899783`, lighter visual weight.
-- Champagne `#B79A68` only as a restrained ornamental highlight.
-
-## 6. Motion direction and approved enrichment
-
-Motion must feel like an editorial cover being activated and its composition deliberately transitioning—not like a physical object being opened.
-
-Approved motion layers:
-1. A restrained pressed/activation response on `BUKA UNDANGAN`.
-2. Staggered movement or reveal of selected cover elements.
-3. Subtle botanical line-art reveal/draw-on where performance permits.
-4. A controlled cover exit or transition.
-5. A clear, natural handoff to the separate Hero composition.
-
-These are permitted directions, not a requirement to animate every element. Keep the sequence legible, short, and restrained. Avoid effects that obscure names, the CTA, or essential information.
-
-The initial target for the complete CTA-triggered transition is approximately **1.2–1.6 seconds**, subject to browser validation. Do not extend it into a long intro without explicit approval.
-
-### Motion anti-patterns
-- Particle systems or explosions.
-- Bounce, elastic easing, spinning.
-- Complex or heavy 3D.
-- Scroll hijacking or scroll lock after completion.
-- Long animations that hide essential content.
-- Decorative motion that competes with names or invitation information.
-
-## 7. Accessibility and input behavior
-
-- The `BUKA UNDANGAN` CTA must be operable by pointer and keyboard.
-- Use a semantic interactive element with an accessible name.
-- Use a semantic button with an accessible name and provide a visible keyboard focus state.
-- Ensure adequate touch target.
-- Do not make essential information available only after an animation.
-- The Opening must not permanently trap or lock scrolling.
-- Keep the functional states clear even when motion is reduced.
-
-### Reduced motion
-
-Respect `prefers-reduced-motion: reduce`:
-- Reduce or remove staggered movement and prolonged botanical drawing.
-- Replace complex cover transitions with a short opacity transition or immediate state change.
-- Use short opacity transitions or an immediate state transition.
-- Preserve the same content, final state, and functionality.
-
-## 8. Performance and validation
-
-Avoid heavy background video, large unoptimized images, multiple oversized botanical assets, heavy 3D rendering, and excessive animation libraries.
-
-Required browser checks before release:
-- pointer and keyboard activation,
-- focus visibility,
-- mobile viewport composition,
-- no clipped text or horizontal overflow,
-- reduced-motion behavior,
-- no essential information hidden,
-- final transition to Hero and normal scrolling,
-- perceived duration and motion smoothness.
-
-**Status:** Editorial Cover art direction LOCKED; implementation and browser QA NOT TESTED until evidenced.
-
-Catatan audit
-Aturan implementasi yang harus dipertahankan:
-1. Tidak semua lapisan animasi wajib digunakan sekaligus. Editorial Cover, CTA, dan Hero terpisah adalah konsep aktif.
-2. Statusnya masih spesifikasi desain, bukan bukti implementasi. Durasi, kelancaran animasi, tampilan mobile, keyboard, dan reduced motion harus diuji di browser sebelum dinyatakan lolos.
-
-
-## Current user override — nature editorial revision
-
-The latest explicit user request supersedes earlier ambient-loop, pause-control and navigation requirements: remove hamburger/bottom navigation and animation pause controls; use finite varied editorial motion with reduced-motion support. Opening handoff remains approximately 1.4 seconds. Music begins on Opening activation with a floating play/stop control. See [current QA](NATURE-EDITORIAL-QA.md) for evidence and remaining release blockers.
+The sequence above is a design brief, not a frame-by-frame storyboard. The agent may use a different sequence, split/merge layers, animate illustrated elements independently, use clip-path/masks, or create a continuous camera-like composition if the result is smooth, performant, accessible, and on-concept.

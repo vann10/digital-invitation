@@ -1,97 +1,93 @@
 # Project Charter — Rizal & Dewi Digital Invitation
 
-**Status:** Active canonical baseline  
-**Project:** Rizal & Dewi  
-**Experience:** Luxury High-Fashion Wedding Editorial  
-**Core principle:** **Intricate Details, Restrained Composition**
+**Status:** Active  
+**Revision focus:** More expressive art direction with fewer unnecessary layout constraints.
 
-## 1. Purpose
+## 1. Project intent
 
-Create a premium digital wedding invitation that feels like luxury wedding stationery brought to life through an intentional digital editorial experience. It should be refined, romantic, modern, spacious, and carefully art-directed.
+Create a premium digital wedding invitation that feels like bespoke stationery, a fashion-editorial art book, and a botanical illustration portfolio combined. The experience should feel ceremonial, romantic, detailed, elegant, and distinctly digital—not like a generic wedding template or a conventional SaaS landing page.
 
-The website is not a generic wedding template, SaaS dashboard, scrapbook, or overly decorative floral experience.
+**Core principle:** Intricate details, expressive composition.
 
-## 2. Locked creative direction
+The site should balance rich visual material with clear hierarchy. Do not interpret “elegant” or “editorial” as “mostly empty.” Texture, illustration, framing, layered scenes, typography, and movement can occupy substantial space when they help tell the story.
 
-- Luxury High-Fashion Wedding Editorial.
-- Rich, colored botanical illustration with engraved detail and painterly shading, paired with restrained composition. The user approved the master prompt on 2026-10-15; existing `public/assets` artwork replaces code-generated botanical line-art.
-- Clean digital stationery with subtle material cues.
-- Generous negative space and controlled asymmetry.
-- Editorial motion, not UI motion.
-- Mobile-first responsive behavior; desktop is an editorial re-composition, not a stretched mobile layout.
-- Eight sections in this order: Opening, Hero, Our Story, The Wedding, Venue, Gallery, RSVP, Closing.
-- No change to locked visual decisions unless the user explicitly authorizes it.
+## 2. Reference interpretation
 
-## 3. Locked visual system
+The eight supplied vertical section illustrations establish the intended visual world:
+- warm ivory paper-like backgrounds with visible, restrained texture;
+- intricate botanical artwork in varied positions, scale, and density;
+- fine ornamental borders and champagne-colored rules used selectively;
+- a mix of monograms, invitation typography, editorial letter treatment, architecture, landscapes, and wedding photography;
+- section-to-section variation rather than one repeated template;
+- rich edge framing and decorative detail without sacrificing legibility.
 
-### Palette
+The supplied video is a motion reference for the ambition and continuity of the experience. Use it as inspiration for layered, choreographed transitions and persistent visual atmosphere. Do not copy unrelated names, content, palette, or assets from it.
 
-| Token | Hex | Role |
-|---|---|---|
-| Emerald Blue | `#174A4A` | Primary brand/interaction accent |
-| Warm Ivory | `#FAF7F1` | Dominant page canvas |
-| White | `#FFFFFF` | Selected stationery surfaces |
-| Muted Sage | `#899783` | Secondary botanical detail |
-| Deep Sage | `#596957` | Primary botanical structure |
-| Champagne | `#B79A68` | Restrained ornament only |
-| Warm Charcoal | `#393534` | Primary text |
-| Soft Brown | `#746A66` | Secondary text/metadata, subject to contrast |
+## 3. Creative direction
 
-Warm Ivory remains dominant. Emerald Blue is selective, not a full-site background. Champagne is ornamental and must not be used as small functional text where contrast is inadequate.
+**Luxury High-Fashion Wedding Editorial**  
+**Visual character:** botanical engraving, realistic sketch details, premium stationery, textured surfaces, romantic landscape illustration, editorial typography, cinematic but restrained motion.
 
-### Typography
+The final work should feel crafted, not assembled from a standard component library. Each section may use a different composition, surface treatment, illustration crop, border, layering strategy, or typographic rhythm.
 
-- **Cormorant Garamond:** display, couple names, major headings, date centerpiece, selected editorial statements.
-- **DM Sans:** body, labels, metadata, location, links, controls, interaction hints.
-- Script family is **PENDING**; use only as a restrained accent if later selected.
+## 4. Decision hierarchy
 
-## 4. Section-level locked decisions
+### Hard requirements
+- Do not invent real wedding details, venue facts, couple history, or final photography.
+- Preserve the approved eight-section sequence unless the user changes it.
+- Preserve the approved RSVP choices and data rules in `07-TECHNICAL-ARCHITECTURE.md`.
+- Preserve accessibility, privacy, and security requirements.
+- Do not silently change a decision explicitly marked `HARD REQUIREMENT` or specifically approved as immutable by the user.
+- Respect the named color and typography direction as the baseline identity. Any deliberate deviation should be intentional and justified, not accidental.
 
-- **Opening:** Editorial Cover focused on monogram, couple names, botanical engraving, whitespace, and `BUKA UNDANGAN`; CTA-triggered sequential editorial motion transitions to a separate Hero composition. See `03-OPENING-EXPERIENCE.md`.
-- **Hero:** separate opened invitation/editorial spread revealed after the Opening CTA; no photography, countdown, RSVP CTA, or long-form copy.
-- **Our Story:** personal letter/editorial correspondence; actual narrative and format remain pending.
-- **The Wedding:** main invitation card plus secondary countdown detail; countdown label `UNTIL THE WEDDING`.
-- **Venue:** architectural engraving is the subject; botanical art is framing; CTA `VIEW LOCATION`.
-- **Gallery:** vertical editorial photo sequence, not a generic grid or autoplay carousel.
-- **RSVP:** two options only—`Attending` and `Unable to Attend`; editorial selection indicator, not a conventional-looking radio button; accessible semantics and states are required.
-- **Closing:** monogram as final signature; no new decorative card system.
+### Creative baselines
+- The visual world remains luxury editorial, botanical, tactile, romantic, and refined.
+- Warm ivory remains the primary surface family; Emerald Blue, sages, champagne, charcoal, and soft brown retain their roles.
+- The Opening and Hero are separate compositions connected by an intentional transition.
+- Section backgrounds and assets should vary where useful.
+- Empty space is a tool, not a goal. Prioritize composition, readability, and emotional impact over maximizing whitespace.
 
-## 5. Technical decisions already confirmed
+### Agent discretion
+Unless the user asks for a faithful reproduction of a specific reference, the agent may independently decide:
+- exact layout, alignment, crop, scale, layering, and placement of visual assets;
+- how much texture is appropriate per section;
+- whether borders, frames, paper edges, engraved flourishes, or subtle shadows improve the result;
+- how botanical and landscape assets transition between sections;
+- how to compose responsive desktop layouts rather than simply enlarging mobile layouts;
+- detailed easing, stagger, parallax, and scroll-linked bird movement within performance and accessibility limits;
+- gallery image arrangement, as long as it remains editorial and not a generic tiled grid.
 
-- Frontend: Next.js + TypeScript.
-- RSVP backend: Supabase.
-- Invitation model: one individual per invitation link.
-- RSVP revision policy: final after first submission.
-- Operator export access: private login.
-- Administration: spreadsheet/export, not a bespoke dashboard.
+## 5. Eight-section experience
 
-These are project decisions, not evidence of implementation. Database schema, authentication setup, endpoints, export workflow, deployment, and technical QA must be specified and implemented separately.
+1. Opening — invitation cover and CTA.
+2. Hero — opened invitation composition with couple names and essential wedding identity.
+3. Our Story — personal narrative with editorial letter treatment.
+4. The Wedding — event information and integrated countdown.
+5. Venue — architecture, venue information, and location action.
+6. Gallery — curated wedding photographs.
+7. RSVP — two approved attendance choices.
+8. Closing — monogram and final message.
 
-## 6. Authority and conflict policy
+Use `02-INFORMATION-ARCHITECTURE.md` for content responsibilities. The art direction is a guide, not a rigid wireframe.
 
-Authority is **per topic**, not “newest file wins”:
+## 6. Visual density and whitespace
 
-1. Opening behavior and opening motion → `03-OPENING-EXPERIENCE.md`
-2. Section sequence/content model → `02-INFORMATION-ARCHITECTURE.md`
-3. Section-specific visual direction → `04-SECTION-ART-DIRECTION.md`
-4. Palette and semantic color usage → `05-COLOR-SYSTEM.md`
-5. Cross-section tokens, components, layout, accessibility → `06-DESIGN-SYSTEM.md`
-6. Technical architecture and RSVP data rules → `07-TECHNICAL-ARCHITECTURE.md`
-7. Actual copy/assets/data readiness → `08-CONTENT-AND-ASSET-REGISTER.md`
-8. Acceptance criteria → `09-QA-AND-ACCEPTANCE.md`
-9. Coding-agent memory → `10-Memory-Prompt.txt`, which must defer to the documents above.
+Avoid two extremes:
+- **Too sparse:** large unused fields that make the site feel unfinished, especially in Opening, Hero, Venue name/details, and Gallery.
+- **Too crowded:** decoration over text, illegible details, excessive competing focal points, or ornamental elements that make controls difficult to use.
 
-If a conflict is not resolved by an explicit user decision, label it `CONFLICT — USER CONFIRMATION REQUIRED`. Do not infer new visual decisions or invent wedding facts.
+Aim for **composed richness**: visible texture, substantial artwork, intentional framing, and a clear hierarchy. If a section looks empty at the actual mobile viewport, revise the composition rather than defending the emptiness as “editorial.”
 
-## 7. Status vocabulary
+## 7. Conflict handling
 
-- **LOCKED:** user-approved decision; do not change without explicit authorization.
-- **DEFINED:** specified baseline, subject to implementation validation where stated.
-- **PENDING:** required input or decision has not been supplied.
-- **PLACEHOLDER:** temporary content or illustrative example, not production data.
-- **DEPRECATED:** historical source retained for traceability; not the active implementation reference.
-- **NOT TESTED:** no implementation validation has been performed or evidenced.
+When a real hard requirement conflicts with a visual idea, preserve the hard requirement and find another visual solution. If two approved requirements truly conflict, document the conflict and ask for clarification. Do not ask for approval for ordinary creative decisions that fall within the agent's discretion.
 
-## 8. Current project readiness
+## 8. Definition of success
 
-Visual direction and information architecture are defined. Final wedding data, personal story, final photos, monogram asset, script typeface, and implementation/QA remain pending where identified in the relevant register. Do not represent design documentation as proof of a completed site, backend, or QA run.
+The website should feel bespoke and memorable, with:
+- a convincing textured stationery atmosphere;
+- visibly different but coherent section compositions;
+- a cinematic Opening-to-Hero transition;
+- a realistic-sketch bird that accompanies scrolling;
+- no conspicuous dead space in key sections;
+- strong legibility, responsive behavior, accessibility, and reliable RSVP functionality.

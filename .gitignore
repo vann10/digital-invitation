@@ -1,6 +1,7 @@
 node_modules/
 .next/
 .next-editorial*/
+.next-suite*/
 out/
 build/
 .env*

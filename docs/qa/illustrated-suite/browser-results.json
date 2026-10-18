@@ -1,0 +1,1396 @@
+{
+  "config": {
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\projek small smallan\\digital-invitation\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "D:\\projek small smallan\\digital-invitation\\playwright.config.ts",
+    "rootDir": "D:/projek small smallan/digital-invitation/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/projek small smallan/digital-invitation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "D:/projek small smallan/digital-invitation/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\projek small smallan\\digital-invitation\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "D:\\projek small smallan\\digital-invitation\\tests\\browser",
+        "snapshotDir": "D:\\projek small smallan\\digital-invitation\\tests\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3003",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "C:/Program Files/Google/Chrome/Application/chrome.exe"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/qa/illustrated-suite/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "final-qa.spec.ts",
+      "file": "final-qa.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "invitation identity changes reset the previous final RSVP",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24434,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:09:11.646Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aa495ce11f72697787a8-fb3e8877db2bedef3ce9",
+          "file": "final-qa.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "late response from the previous invitation cannot finalize the new one",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 36953,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:09:37.778Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aa495ce11f72697787a8-3c72da2878761be422a8",
+          "file": "final-qa.spec.ts",
+          "line": 21,
+          "column": 5
+        },
+        {
+          "title": "slow, fast and reverse scrolling leave content readable and motion finite",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 50151,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:10:14.980Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aa495ce11f72697787a8-fe76eaa64988bf4d3146",
+          "file": "final-qa.spec.ts",
+          "line": 36,
+          "column": 5
+        },
+        {
+          "title": "direct opened navigation, full-page axe and resource diagnostics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26625,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:11:05.301Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aa495ce11f72697787a8-abd4f62472fa3bec7c39",
+          "file": "final-qa.spec.ts",
+          "line": 60,
+          "column": 5
+        },
+        {
+          "title": "blocked image downloads preserve the invitation and monogram fallback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12582,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:11:32.127Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aa495ce11f72697787a8-02db35fa9971f22750ac",
+          "file": "final-qa.spec.ts",
+          "line": 83,
+          "column": 5
+        },
+        {
+          "title": "operator routes deny forged sessions, foreign mutations and public caching",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16855,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:11:44.848Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aa495ce11f72697787a8-2eb3f77c5d5a168cb4ea",
+          "file": "final-qa.spec.ts",
+          "line": 95,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "invitation.spec.ts",
+      "file": "invitation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "illustrated entrance, monogram reveal, finite motion and outward handoff",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 34958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:12:02.179Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-6e6d9f36c852c3c0dd2e",
+          "file": "invitation.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "composition 320x568",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 29412,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    13 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    13 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:260:44",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 44,
+                      "line": 260
+                    },
+                    "snippet": "  258 |         id,\n  259 |       ).toBe(true);\n> 260 |       await expect(page.locator(\"#\" + id)).toHaveCSS(\"overflow\", \"visible\");\n      |                                            ^\n  261 |     }\n  262 |     await page.screenshot({\n  263 |       path: `${qaRoot}/page-${size.width}.png`,"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 44,
+                        "line": 260
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    13 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n\n  258 |         id,\n  259 |       ).toBe(true);\n> 260 |       await expect(page.locator(\"#\" + id)).toHaveCSS(\"overflow\", \"visible\");\n      |                                            ^\n  261 |     }\n  262 |     await page.screenshot({\n  263 |       path: `${qaRoot}/page-${size.width}.png`,\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:260:44"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 320: 3628ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:12:37.261Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-320x568\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-320x568\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 44,
+                    "line": 260
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-54923e9b1174b2bfd090",
+          "file": "invitation.spec.ts",
+          "line": 148,
+          "column": 7
+        },
+        {
+          "title": "composition 390x844",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 33564,
+                  "error": {
+                    "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2317.484375\u001b[39m\nReceived:   \u001b[31m2434.603759765625\u001b[39m",
+                    "stack": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2317.484375\u001b[39m\nReceived:   \u001b[31m2434.603759765625\u001b[39m\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:224:7",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 7,
+                      "line": 224
+                    },
+                    "snippet": "  222 |       leafBox!.y + leafBox!.height,\n  223 |       \"countdown artwork must clear its label\",\n> 224 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  225 |     expect(\n  226 |       await page\n  227 |         .locator(\"main section[id]\")"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 7,
+                        "line": 224
+                      },
+                      "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2317.484375\u001b[39m\nReceived:   \u001b[31m2434.603759765625\u001b[39m\n\n  222 |       leafBox!.y + leafBox!.height,\n  223 |       \"countdown artwork must clear its label\",\n> 224 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  225 |     expect(\n  226 |       await page\n  227 |         .locator(\"main section[id]\")\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:224:7"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 390: 3626ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:13:45.698Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-390x844\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-390x844\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 7,
+                    "line": 224
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-05cc98cc705c2d78c5c5",
+          "file": "invitation.spec.ts",
+          "line": 148,
+          "column": 7
+        },
+        {
+          "title": "composition 768x1024",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 20120,
+                  "error": {
+                    "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2468.6875\u001b[39m\nReceived:   \u001b[31m2585.806884765625\u001b[39m",
+                    "stack": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2468.6875\u001b[39m\nReceived:   \u001b[31m2585.806884765625\u001b[39m\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:224:7",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 7,
+                      "line": 224
+                    },
+                    "snippet": "  222 |       leafBox!.y + leafBox!.height,\n  223 |       \"countdown artwork must clear its label\",\n> 224 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  225 |     expect(\n  226 |       await page\n  227 |         .locator(\"main section[id]\")"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 7,
+                        "line": 224
+                      },
+                      "message": "Error: countdown artwork must clear its label\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2468.6875\u001b[39m\nReceived:   \u001b[31m2585.806884765625\u001b[39m\n\n  222 |       leafBox!.y + leafBox!.height,\n  223 |       \"countdown artwork must clear its label\",\n> 224 |     ).toBeLessThan(countdownLabel!.y);\n      |       ^\n  225 |     expect(\n  226 |       await page\n  227 |         .locator(\"main section[id]\")\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:224:7"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 768: 3626ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:14:54.998Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-768x1024\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-768x1024\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 7,
+                    "line": 224
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-e64651dc0072e2a5d8e1",
+          "file": "invitation.spec.ts",
+          "line": 148,
+          "column": 7
+        },
+        {
+          "title": "composition 1024x768",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 18706,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    13 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    13 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:260:44",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 44,
+                      "line": 260
+                    },
+                    "snippet": "  258 |         id,\n  259 |       ).toBe(true);\n> 260 |       // Decorative scene edges may clip; readable headings must remain inside\n      |                                            ^\n  261 |       // the viewport instead of requiring a particular CSS overflow value.\n  262 |       const headings = await page.locator(\"#\" + id + \" h1, #\" + id + \" h2\").evaluateAll(nodes => nodes.map(node => {\n  263 |         const box = node.getBoundingClientRect();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 44,
+                        "line": 260
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    13 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n\n  258 |         id,\n  259 |       ).toBe(true);\n> 260 |       // Decorative scene edges may clip; readable headings must remain inside\n      |                                            ^\n  261 |       // the viewport instead of requiring a particular CSS overflow value.\n  262 |       const headings = await page.locator(\"#\" + id + \" h1, #\" + id + \" h2\").evaluateAll(nodes => nodes.map(node => {\n  263 |         const box = node.getBoundingClientRect();\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:260:44"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 1024: 3624ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:15:18.667Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-1024x768\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-1024x768\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 44,
+                    "line": 260
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-c89fed7f044b0d62932b",
+          "file": "invitation.spec.ts",
+          "line": 148,
+          "column": 7
+        },
+        {
+          "title": "composition 1440x900",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 18386,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    14 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    14 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:260:44",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 44,
+                      "line": 260
+                    },
+                    "snippet": "  258 |         id,\n  259 |       ).toBe(true);\n> 260 |       // Decorative scene edges may clip; readable headings must remain inside\n      |                                            ^\n  261 |       // the viewport instead of requiring a particular CSS overflow value.\n  262 |       const headings = await page.locator(\"#\" + id + \" h1, #\" + id + \" h2\").evaluateAll(nodes => nodes.map(node => {\n  263 |         const box = node.getBoundingClientRect();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 44,
+                        "line": 260
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    14 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n\n  258 |         id,\n  259 |       ).toBe(true);\n> 260 |       // Decorative scene edges may clip; readable headings must remain inside\n      |                                            ^\n  261 |       // the viewport instead of requiring a particular CSS overflow value.\n  262 |       const headings = await page.locator(\"#\" + id + \" h1, #\" + id + \" h2\").evaluateAll(nodes => nodes.map(node => {\n  263 |         const box = node.getBoundingClientRect();\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:260:44"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 1440: 3610ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:15:40.545Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-1440x900\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-1440x900\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 44,
+                    "line": 260
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-402add630e44598a160b",
+          "file": "invitation.spec.ts",
+          "line": 148,
+          "column": 7
+        },
+        {
+          "title": "composition 667x375",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 18414,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    13 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    13 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:260:44",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                      "column": 44,
+                      "line": 260
+                    },
+                    "snippet": "  258 |         id,\n  259 |       ).toBe(true);\n> 260 |       // Decorative scene edges may clip; readable headings must remain inside\n      |                                            ^\n  261 |       // the viewport instead of requiring a particular CSS overflow value.\n  262 |       const headings = await page.locator(\"#\" + id + \" h1, #\" + id + \" h2\").evaluateAll(nodes => nodes.map(node => {\n  263 |         const box = node.getBoundingClientRect();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                        "column": 44,
+                        "line": 260
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCSS\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#hero')\nExpected: \u001b[32m\"visible\"\u001b[39m\nReceived: \u001b[31m\"hidden\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCSS\" locator('#hero') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#hero')\u001b[22m\n\u001b[2m    13 × locator resolved to <section id=\"hero\" class=\"hero section\" aria-labelledby=\"hero-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n\n  258 |         id,\n  259 |       ).toBe(true);\n> 260 |       // Decorative scene edges may clip; readable headings must remain inside\n      |                                            ^\n  261 |       // the viewport instead of requiring a particular CSS overflow value.\n  262 |       const headings = await page.locator(\"#\" + id + \" h1, #\" + id + \" h2\").evaluateAll(nodes => nodes.map(node => {\n  263 |         const box = node.getBoundingClientRect();\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts:260:44"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "CTA 667: 3619ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:16:01.099Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-667x375\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\invitation-composition-667x375\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\invitation.spec.ts",
+                    "column": 44,
+                    "line": 260
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-6b193598cf7506935481",
+          "file": "invitation.spec.ts",
+          "line": 148,
+          "column": 7
+        },
+        {
+          "title": "no navigation or pause UI; opening preserves invitation identity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3097,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:16:21.827Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-1553b1dc6936235e1c84",
+          "file": "invitation.spec.ts",
+          "line": 286,
+          "column": 5
+        },
+        {
+          "title": "section choreography varies by material and reduced motion cancels active reveals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7801,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:16:25.568Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-49d4e6a4c498276fca58",
+          "file": "invitation.spec.ts",
+          "line": 307,
+          "column": 5
+        },
+        {
+          "title": "changing reduced motion preference completes cover artwork immediately",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3392,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:16:33.398Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-88641b3323b541b1d9af",
+          "file": "invitation.spec.ts",
+          "line": 338,
+          "column": 5
+        },
+        {
+          "title": "keyboard Enter and Space, early activation, duplicate activation and stopped animations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 32286,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:16:36.815Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-ac55266f7ed28236b452",
+          "file": "invitation.spec.ts",
+          "line": 360,
+          "column": 5
+        },
+        {
+          "title": "touch activation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8026,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:17:09.125Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-bfba1d0a295c40a9458a",
+          "file": "invitation.spec.ts",
+          "line": 388,
+          "column": 5
+        },
+        {
+          "title": "reduced motion and accessibility scan",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10192,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:17:17.184Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-022ff9124cbaf79621d3",
+          "file": "invitation.spec.ts",
+          "line": 401,
+          "column": 5
+        },
+        {
+          "title": "no JavaScript native cover form opens invitation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4671,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:17:27.406Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-e5d975aa5329a05e9de6",
+          "file": "invitation.spec.ts",
+          "line": 435,
+          "column": 5
+        },
+        {
+          "title": "RSVP retains selection on error and only confirms server success (mock transport)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6460,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:17:32.117Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-d078213230cf5b61f83b",
+          "file": "invitation.spec.ts",
+          "line": 447,
+          "column": 5
+        },
+        {
+          "title": "already-submitted response shows authoritative final choice (mock transport)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6252,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:17:38.615Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-a7e057566e17888aed83",
+          "file": "invitation.spec.ts",
+          "line": 480,
+          "column": 5
+        },
+        {
+          "title": "real API rejects anonymous export, foreign origins, malformed input and disabled backend",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8290,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:17:44.932Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94030e3a77a8b296006f-633a8fd937087b8828d2",
+          "file": "invitation.spec.ts",
+          "line": 497,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "music.spec.ts",
+      "file": "music.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "failed audio download can be retried without reopening the invitation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24240,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:17:53.614Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d97237201e8c41ddec1a-fc1cce120d9906320735",
+          "file": "music.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "music is gesture-started, plays real audio, stops at zero and can restart by keyboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14681,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:18:18.073Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d97237201e8c41ddec1a-129a8c6ce6442e3fd1be",
+          "file": "music.spec.ts",
+          "line": 16,
+          "column": 5
+        },
+        {
+          "title": "blocked playback leaves invitation usable and offers a real retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7994,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:18:32.791Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d97237201e8c41ddec1a-996dffea93ee317a00f9",
+          "file": "music.spec.ts",
+          "line": 60,
+          "column": 5
+        },
+        {
+          "title": "direct opened link stays silent until the play control is activated",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5244,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:18:40.824Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d97237201e8c41ddec1a-589c7b0090f189f435fe",
+          "file": "music.spec.ts",
+          "line": 91,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "scroll-bird.spec.ts",
+      "file": "scroll-bird.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authored bird follows sections and remains outside the reading area",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5111,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\scroll-bird.spec.ts:12:56",
+                    "location": {
+                      "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\scroll-bird.spec.ts",
+                      "column": 56,
+                      "line": 12
+                    },
+                    "snippet": "  10 |     const box = await bird.boundingBox();\n  11 |     expect(box).not.toBeNull();\n> 12 |     expect(box!.x + box!.width <= 87 || box!.x >= 303).toBe(true);\n     |                                                        ^\n  13 |     positions.push(box!.x);\n  14 |   }\n  15 |   expect(new Set(positions).size).toBeGreaterThan(1);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\scroll-bird.spec.ts",
+                        "column": 56,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  10 |     const box = await bird.boundingBox();\n  11 |     expect(box).not.toBeNull();\n> 12 |     expect(box!.x + box!.width <= 87 || box!.x >= 303).toBe(true);\n     |                                                        ^\n  13 |     positions.push(box!.x);\n  14 |   }\n  15 |   expect(new Set(positions).size).toBeGreaterThan(1);\n    at D:\\projek small smallan\\digital-invitation\\tests\\browser\\scroll-bird.spec.ts:12:56"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:18:46.160Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\scroll-bird-authored-bird--6f043-ns-outside-the-reading-area\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\projek small smallan\\digital-invitation\\test-results\\scroll-bird-authored-bird--6f043-ns-outside-the-reading-area\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\projek small smallan\\digital-invitation\\tests\\browser\\scroll-bird.spec.ts",
+                    "column": 56,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "144275c59b2ee14991a8-333a6b03d5e7c45ea769",
+          "file": "scroll-bird.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "reduced motion removes continuous bird travel within a section",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4829,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-18T02:18:59.246Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "144275c59b2ee14991a8-4b295856d517344adb08",
+          "file": "scroll-bird.spec.ts",
+          "line": 20,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-18T02:09:09.613Z",
+    "duration": 596000.207,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}
